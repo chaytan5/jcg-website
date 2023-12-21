@@ -2,26 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
+  .yellow-gradient-text {
+    @apply bg-gradient-to-r from-lightYellow to-darkYellow bg-clip-text text-transparent
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .yellow-gradient-bg {
+    @apply bg-gradient-to-r from-lightYellow to-darkYellow
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer utilities {
+
+  .gray-gradient {
+    background: linear-gradient(90deg, rgba(217, 217, 217, 0.05) 15.49%, rgba(217, 217, 217, 0.01) 105.14%);
+  }
+
+  .font-outline {
+    -webkit-text-stroke: 2px transparent;
+  }
+
+  .light-gray-gradient {
+    background: linear-gradient(90deg, rgba(217, 217, 217, 0.08) 15.5%, rgba(217, 217, 217, 0.02) 105.14%);
+  }
 }

@@ -41,7 +41,7 @@ const TestimonialCarousel = () => {
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}
       // deviceType={this.props.deviceType}
-      dotListClass=" "
+      dotListClass=""
       itemClass=""
     >
       <Image src={testimonialOne} alt="" />

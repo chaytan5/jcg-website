@@ -2,6 +2,7 @@ import Image from "next/image";
 import heroImg from "@/assets/images/hero.png";
 import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
+import gumroadIcon from "@/assets/icons/gumroad-icon.svg";
 
 const HeroSection = () => {
   return (
@@ -38,7 +39,7 @@ const HeroSection = () => {
             Discover the power of money with JamesCG to create a life of
             abundance
           </h4>
-          <div className=" light-gray-gradient rounded-4xl flex flex-col divide-y divide-dotted divide-white/30 px-5 text-center md:hidden">
+          <div className="light-gray-gradient rounded-4xl flex flex-col divide-y divide-dotted divide-white/30 px-5 text-center md:hidden">
             <div className="grid grid-cols-2 place-items-center divide-x divide-dotted divide-white/30">
               <div className="my-5 space-y-2 pr-5">
                 <h4 className=" yellow-gradient-text text-xl font-bold">
@@ -58,7 +59,6 @@ const HeroSection = () => {
                 </p>
               </div>
             </div>
-            {/* <div className="" /> */}
             <div className="grid grid-cols-2 place-items-center divide-x divide-dotted divide-white/30">
               <div className="my-5 space-y-2 pr-5">
                 <h4 className=" yellow-gradient-text text-xl font-bold">
@@ -78,6 +78,24 @@ const HeroSection = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          <div className="flex items-center justify-center gap-4 md:hidden">
+            <button className="yellow-gradient-bg text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+              <Link href={"/"} className="flex items-center gap-2 px-5 py-3">
+                <p>Sign Up & Save 10%*</p>
+                <LuArrowUpRight size={18} />
+              </Link>
+            </button>
+            <button className=" text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+              <Link
+                href={"/"}
+                className="yellow-gradient-text flex items-center gap-2 "
+              >
+                <p>More Information</p>
+                <LuArrowUpRight className="text-secondary" />
+              </Link>
+            </button>
           </div>
 
           <div className="hidden space-y-5 md:block">
@@ -110,7 +128,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-md self-center pb-16 md:max-w-xl md:self-start ">
+        <div className="max-w-md self-center md:max-w-xl md:self-start md:pb-16 ">
           <Image className="" src={heroImg} alt="James Crypto Guru" />
         </div>
       </div>

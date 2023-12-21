@@ -124,7 +124,7 @@ const JamesInfoSection = () => {
           <button className=" text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
             <Link
               href={"/"}
-              className="yellow-gradient-text flex items-center gap-2 px-6 py-3"
+              className="yellow-gradient-text flex items-center gap-2 "
             >
               <p>More Information</p>
               <LuArrowUpRight className="text-secondary" />

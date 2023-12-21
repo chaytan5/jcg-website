@@ -51,67 +51,65 @@ const Header = () => {
         </div>
       </div>
 
-      <>
-        <div
-          className={`bg-primary/90 fixed inset-0 z-30 h-full w-full ${
-            menuOpen ? "block" : "hidden"
-          }`}
-        />
-        <div
-          className={`text-whitetransition-all fixed left-0 top-0 z-40 h-dvh w-full bg-[#0B0C0D] duration-500 ease-out slide-out-to-left-full md:max-w-lg ${
-            menuOpen ? "left-0" : "-left-full"
-          }`}
-        >
-          <div className="flex h-full flex-col gap-14 px-16 py-6 text-white ">
-            <div className="flex items-center gap-14">
-              <div
-                className="cursor-pointer rounded-full bg-black p-3"
-                onClick={handleMenuClose}
-              >
-                <ImCross size={18} />
-              </div>
-              <Image src={jcgLogo} alt="JCG logo" />
+      <div
+        className={`bg-primary/90 fixed inset-0 z-30 h-full w-full ${
+          menuOpen ? "block" : "hidden"
+        }`}
+      />
+      <div
+        className={`fixed top-0 z-40 h-dvh w-full bg-[#0B0C0D] text-white transition-all duration-500  ease-out md:max-w-lg ${
+          menuOpen ? "left-0" : "-left-full"
+        }`}
+      >
+        <div className="flex h-full flex-col gap-14 px-16 py-6 text-white ">
+          <div className="flex items-center gap-14">
+            <div
+              className="cursor-pointer rounded-full bg-black p-3"
+              onClick={handleMenuClose}
+            >
+              <ImCross size={18} />
             </div>
+            <Image src={jcgLogo} alt="JCG logo" />
+          </div>
 
-            <div>
-              <ul className="space-y-6 text-sm font-medium">
-                <li>About James</li>
-                <li>Trailer</li>
-                <li>Pricing</li>
-                <li>Testimonials</li>
-                <li>Who is it for</li>
-                <li>Topics</li>
-                <li>10% Discount Deal</li>
-                <li>FAQ</li>
-                <li>Contact</li>
-              </ul>
-            </div>
+          <div>
+            <ul className="space-y-6 text-sm font-medium">
+              <li>About James</li>
+              <li>Trailer</li>
+              <li>Pricing</li>
+              <li>Testimonials</li>
+              <li>Who is it for</li>
+              <li>Topics</li>
+              <li>10% Discount Deal</li>
+              <li>FAQ</li>
+              <li>Contact</li>
+            </ul>
+          </div>
 
-            <div>
-              <div className="mb-5 mt-10">
-                <button className="yellow-gradient-bg text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
-                  <Link
-                    href={"/"}
-                    className="flex items-center gap-[10px] px-6 py-3"
-                  >
-                    <p>Sign up for the course</p>
-                    <LuArrowUpRight size={18} className="text-primary" />
-                  </Link>
-                </button>
-              </div>
-
-              <div>
+          <div>
+            <div className="mb-5 mt-10">
+              <button className="yellow-gradient-bg text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
                 <Link
-                  className="text-sm font-semibold"
-                  href="mailto:contact@jamescryptoguru.com"
+                  href={"/"}
+                  className="flex items-center gap-[10px] px-6 py-3"
                 >
-                  contact@jamescryptoguru.com
+                  <p>Sign up for the course</p>
+                  <LuArrowUpRight size={18} className="text-primary" />
                 </Link>
-              </div>
+              </button>
+            </div>
+
+            <div>
+              <Link
+                className="text-sm font-semibold"
+                href="mailto:contact@jamescryptoguru.com"
+              >
+                contact@jamescryptoguru.com
+              </Link>
             </div>
           </div>
         </div>
-      </>
+      </div>
     </header>
   );
 };

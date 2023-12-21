@@ -6,7 +6,7 @@ import useMatchMedia from "@/hooks/useMediaQuery";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const CustomDot = ({ onClick, active, index, carouselState }: any) => {
+export const CustomDot = ({ onClick, active, index, carouselState }: any) => {
   const { currentSlide } = carouselState;
   return (
     <li

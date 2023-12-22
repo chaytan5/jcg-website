@@ -9,18 +9,22 @@ const PricingSection = () => {
   return (
     <section className="mx-auto w-11/12 max-w-screen-xl">
       <div className="space-y-[60px]">
-        <h2 className="yellow-gradient-text py-4 text-center text-5xl font-bold">
+        <h2 className="md:yellow-gradient-text py-2 text-center text-[42px] font-bold text-white md:text-5xl">
           Pricing
         </h2>
 
         <div className="grid grid-cols-1 gap-[30px] sm:grid-cols-2 xl:grid-cols-3">
           <div className="rounded-t-4xl">
-            <div className="h-[90px] w-full">
+            <div className="relative h-[90px] w-full">
               <Image
                 src={lightPackage}
                 alt="Light package"
-                className="rounded-t-4xl object-cover"
+                className="rounded-t-4xl h-full object-cover"
               />
+
+              <p className="absolute bottom-5 left-5 text-[26px] font-bold tracking-wider drop-shadow">
+                Light package
+              </p>
             </div>
             <div className="gray-gradient rounded-b-4xl space-y-[30px] px-[30px] pb-[30px] pt-10">
               <div>
@@ -73,12 +77,15 @@ const PricingSection = () => {
             </div>
           </div>
           <div className="rounded-t-4xl">
-            <div className="h-[90px] w-full">
+            <div className="relative h-[90px] w-full">
               <Image
                 src={mediumPackage}
                 alt="Medium package"
-                className="rounded-t-4xl object-cover"
+                className="rounded-t-4xl h-full object-cover opacity-70"
               />
+              <p className="absolute bottom-5 left-5 w-full text-[26px] font-bold tracking-wider drop-shadow">
+                Medium package
+              </p>
             </div>
             <div className="gray-gradient rounded-b-4xl space-y-[30px] px-[30px] pb-[30px] pt-10">
               <div>
@@ -125,12 +132,15 @@ const PricingSection = () => {
             </div>
           </div>
           <div className="rounded-t-4xl">
-            <div className="h-[90px] w-full">
+            <div className="relative h-[90px] w-full">
               <Image
                 src={vipPackage}
                 alt="Medium package"
-                className="rounded-t-4xl object-cover"
+                className="rounded-t-4xl h-full object-cover"
               />
+              <p className="absolute bottom-5 left-5 text-[26px] font-bold tracking-wider drop-shadow">
+                VIP package
+              </p>
             </div>
             <div className="gray-gradient rounded-b-4xl space-y-[30px] px-[30px] pb-[30px] pt-10">
               <div>

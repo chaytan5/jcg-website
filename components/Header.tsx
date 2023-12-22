@@ -56,12 +56,12 @@ const Header = () => {
           menuOpen ? "block" : "hidden"
         }`}
       />
-      <div
-        className={`fixed top-0 z-40 h-dvh w-full bg-[#0B0C0D] text-white transition-all duration-500  ease-out md:max-w-lg ${
+      <nav
+        className={`fixed top-0 z-40 h-dvh w-full overflow-y-auto bg-[#0B0C0D] text-white transition-all duration-500  ease-out md:max-w-lg ${
           menuOpen ? "left-0" : "-left-full"
         }`}
       >
-        <div className="flex h-full flex-col gap-14 px-16 py-6 text-white ">
+        <div className="pb10 flex h-full flex-col gap-14 px-16 py-6 text-white ">
           <div className="flex items-center gap-14">
             <div
               className="cursor-pointer rounded-full bg-black p-3"
@@ -99,7 +99,7 @@ const Header = () => {
               </button>
             </div>
 
-            <div>
+            <div className="pb-10">
               <Link
                 className="text-sm font-semibold"
                 href="mailto:contact@jamescryptoguru.com"
@@ -109,7 +109,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
   );
 };

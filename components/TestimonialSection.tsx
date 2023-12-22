@@ -12,12 +12,6 @@ const TestimonialSection = () => {
           Hear from those who have experienced James&apos; courses
         </h5>
       </div>
-      {/* <div className="grid grid-cols-3 gap-8">
-            <Image src={testimonialOne} alt="" />
-            <Image src={testimonialTwo} alt="" />
-            <Image src={testimonialThree} alt="" />
-          </div> */}
-
       <TestimonialCarousel />
     </section>
   );

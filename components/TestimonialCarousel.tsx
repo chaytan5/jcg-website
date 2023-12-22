@@ -32,7 +32,7 @@ const TestimonialCarousel = () => {
       breakpoint: { max: 640, min: 0 },
       items: 1,
       slidesToSlide: 1,
-      partialVisibilityGutter: 50, // optional, default to 1.
+      partialVisibilityGutter: 40,
     },
   };
   return (
@@ -41,7 +41,7 @@ const TestimonialCarousel = () => {
       draggable={true}
       showDots={true}
       responsive={responsive}
-      infinite={true}
+      infinite={false}
       keyBoardControl={true}
       customTransition="transform 300ms ease-in-out"
       transitionDuration={500}
@@ -49,20 +49,75 @@ const TestimonialCarousel = () => {
       removeArrowOnDeviceType={["tablet", "mobile"]}
       dotListClass=""
       itemClass=""
-      partialVisible
       customDot={<CustomDot />}
+      partialVisbile
     >
-      <Image src={t1} alt="Testimonial" />
-      <Image src={t2} alt="Testimonial" />
-      <Image src={t3} alt="Testimonial" />
-      <Image src={t4} alt="Testimonial" />
-      <Image src={t5} alt="Testimonial" />
-      <Image src={t6} alt="Testimonial" />
-      <Image src={t7} alt="Testimonial" />
-      <Image src={t8} alt="Testimonial" />
-      <Image src={t9} alt="Testimonial" />
-      <Image src={t10} alt="Testimonial" />
-      <Image src={t11} alt="Testimonial" />
+      <Image
+        priority
+        src={t1}
+        alt="Testimonial"
+        className="cursor-none select-none"
+      />
+      <Image
+        priority
+        src={t2}
+        alt="Testimonial"
+        className="cursor-none select-none"
+      />
+      <Image
+        priority
+        src={t3}
+        alt="Testimonial"
+        className="cursor-none select-none"
+      />
+      <Image
+        priority
+        src={t4}
+        alt="Testimonial"
+        className="cursor-none select-none"
+      />
+      <Image
+        priority
+        src={t5}
+        alt="Testimonial"
+        className="cursor-none select-none"
+      />
+      <Image
+        priority
+        src={t6}
+        alt="Testimonial"
+        className="cursor-none select-none"
+      />
+      <Image
+        priority
+        src={t7}
+        alt="Testimonial"
+        className="cursor-none select-none"
+      />
+      <Image
+        priority
+        src={t8}
+        alt="Testimonial"
+        className="cursor-none select-none"
+      />
+      <Image
+        priority
+        src={t9}
+        alt="Testimonial"
+        className="cursor-none select-none"
+      />
+      <Image
+        priority
+        src={t10}
+        alt="Testimonial"
+        className="cursor-none select-none"
+      />
+      <Image
+        priority
+        src={t11}
+        alt="Testimonial"
+        className="cursor-none select-none"
+      />
     </Carousel>
   );
 };

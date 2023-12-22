@@ -15,7 +15,7 @@ const CourseInfoSection = () => {
             <h4 className="yellow-gradient-text text-center text-xl font-bold md:text-3xl">
               Aspiring Entrepreneurs
             </h4>
-            <p className="text-balance text-center  text-base md:text-left md:text-lg">
+            <p className="text-balance text-center  text-base md:text-lg">
               Individuals looking to start and grow their own businesses and
               want to get access to the main secret of success.
             </p>
@@ -24,7 +24,7 @@ const CourseInfoSection = () => {
             <h4 className="yellow-gradient-text text-center text-xl font-bold md:text-3xl">
               Cryptocurrency & Stock Enthusiasts
             </h4>
-            <p className="text-balance text-center text-base md:text-left md:text-lg">
+            <p className="text-balance text-center text-base md:text-lg">
               Those interested in investing and trading in cryptocurrencies, but
               want to start it right.
             </p>
@@ -38,7 +38,7 @@ const CourseInfoSection = () => {
             <h4 className="yellow-gradient-text text-center text-xl font-bold md:text-3xl">
               Personal Development Seekers
             </h4>
-            <p className="text-balance text-center text-base md:text-left md:text-lg">
+            <p className="text-balance text-center text-base md:text-lg">
               People aiming to improve their financial mindset and personal
               growth.
             </p>
@@ -47,7 +47,7 @@ const CourseInfoSection = () => {
             <h4 className="yellow-gradient-text text-center text-xl font-bold md:text-3xl">
               Wealth Management Professionals
             </h4>
-            <p className="text-balance text-center text-base md:text-left md:text-lg">
+            <p className="text-balance text-center text-base md:text-lg">
               Those in finance seeking advanced wealth management and investment
               strategies.
             </p>

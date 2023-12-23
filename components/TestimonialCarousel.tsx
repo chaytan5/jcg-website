@@ -21,12 +21,12 @@ const TestimonialCarousel = () => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 3, // optional, default to 1.
+      slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 640 },
       items: 2,
-      slidesToSlide: 2, // optional, default to 1.
+      slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 640, min: 0 },
@@ -41,7 +41,8 @@ const TestimonialCarousel = () => {
       draggable={true}
       showDots={true}
       responsive={responsive}
-      infinite={false}
+      infinite={true}
+      minimumTouchDrag={80}
       keyBoardControl={true}
       customTransition="transform 300ms ease-in-out"
       transitionDuration={500}
@@ -50,73 +51,73 @@ const TestimonialCarousel = () => {
       dotListClass=""
       itemClass=""
       customDot={<CustomDot />}
-      partialVisbile
+      partialVisible
     >
       <Image
         priority
         src={t1}
         alt="Testimonial"
-        className="cursor-none select-none"
+        className="drag-none cursor-grab select-none"
       />
       <Image
         priority
         src={t2}
         alt="Testimonial"
-        className="cursor-none select-none"
+        className="drag-none cursor-grab select-none"
       />
       <Image
         priority
         src={t3}
         alt="Testimonial"
-        className="cursor-none select-none"
+        className="drag-none cursor-grab select-none"
       />
       <Image
         priority
         src={t4}
         alt="Testimonial"
-        className="cursor-none select-none"
+        className="drag-none cursor-grab select-none"
       />
       <Image
         priority
         src={t5}
         alt="Testimonial"
-        className="cursor-none select-none"
+        className="drag-none cursor-grab select-none"
       />
       <Image
         priority
         src={t6}
         alt="Testimonial"
-        className="cursor-none select-none"
+        className="drag-none cursor-grab select-none"
       />
       <Image
         priority
         src={t7}
         alt="Testimonial"
-        className="cursor-none select-none"
+        className="drag-none cursor-grab select-none"
       />
       <Image
         priority
         src={t8}
         alt="Testimonial"
-        className="cursor-none select-none"
+        className="drag-none cursor-grab select-none"
       />
       <Image
         priority
         src={t9}
         alt="Testimonial"
-        className="cursor-none select-none"
+        className="drag-none cursor-grab select-none"
       />
       <Image
         priority
         src={t10}
         alt="Testimonial"
-        className="cursor-none select-none"
+        className="drag-none cursor-grab select-none"
       />
       <Image
         priority
         src={t11}
         alt="Testimonial"
-        className="cursor-none select-none"
+        className="drag-none cursor-grab select-none"
       />
     </Carousel>
   );

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
+import { SignUpDialog } from "./SignUpDialog";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
     }
   }
   return (
-    <header className="bg-primary  sticky top-0 z-50 w-full">
+    <header className="bg-primary sticky top-0 z-50 w-full">
       <div className="mx-auto flex w-11/12  items-center justify-between py-6">
         <div className="flex items-center gap-5 sm:gap-14">
           <div
@@ -36,14 +37,21 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex items-center gap-4">
-          <button className="yellow-gradient-bg text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
-            <Link href={"/"} className="flex items-center gap-[10px] px-6 py-3">
-              <p>Sign up for the course</p>
-              <LuArrowUpRight size={18} className="text-primary" />
-            </Link>
-          </button>
+          <SignUpDialog>
+            <button className="yellow-gradient-bg text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+              <div className="flex items-center gap-[10px] px-6 py-3">
+                <p>Sign up for the course</p>
+                <LuArrowUpRight size={18} className="text-primary" />
+              </div>
+            </button>
+          </SignUpDialog>
           <button className="bg-gunmetal hidden place-items-center  whitespace-nowrap rounded-full text-sm  font-medium text-white md:grid ">
-            <Link href={"/"} className="flex items-center gap-[10px] px-6 py-3">
+            <Link
+              href="https://www.youtube.com/@JamesCryptoGuru"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="flex items-center gap-[10px] px-6 py-3"
+            >
               <p>James&apos;s Youtube</p>
               <LuArrowUpRight size={18} className="text-white" />
             </Link>

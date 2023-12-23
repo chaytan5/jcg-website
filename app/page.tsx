@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 
-import jcgLogo from "@/assets/icons/jcg-logo.svg";
-
 import {
   FaDiscord,
   FaYoutube,
@@ -12,7 +10,6 @@ import {
   FaPatreon,
   FaTelegram,
 } from "react-icons/fa6";
-import { MdOutlineAlternateEmail } from "react-icons/md";
 import InfoSection from "@/components/InfoSection";
 import HeroSection from "@/components/HeroSection";
 import VideoSection from "@/components/VideoSection";

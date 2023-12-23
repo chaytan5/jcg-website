@@ -3,6 +3,7 @@ import heroImg from "@/assets/images/hero.png";
 import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import gumroadIcon from "@/assets/icons/gumroad-icon.svg";
+import HeroSideButton from "./HeroSideButton";
 
 const HeroSection = () => {
   return (
@@ -13,6 +14,8 @@ const HeroSection = () => {
         </p>
       </div>
       <div className="relative z-10 mx-auto flex w-11/12 max-w-screen-xl flex-col items-stretch justify-between gap-12 md:pt-28 lg:flex-row">
+        <HeroSideButton />
+
         <div className="w-full space-y-8 self-end lg:w-1/2 ">
           <div className="gray-gradient hidden w-fit items-center gap-4 divide-x-2 divide-dotted divide-white/30 rounded-xl bg-gradient-to-r px-6 py-2 lg:flex">
             <p className="from-lightYellow to-darkYellow bg-gradient-to-r bg-clip-text text-[40px] font-bold text-transparent">

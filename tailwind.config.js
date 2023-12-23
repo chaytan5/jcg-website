@@ -49,6 +49,9 @@ module.exports = {
       backgroundImage: {
         "contact-texture": "url('/art-bg.png')",
       },
+      boxShadow: {
+        "hero-button": "0px 4px 30px 0px rgba(0, 0, 0, 0.60)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/forms")],

@@ -136,25 +136,50 @@ const JamesInfoSection = () => {
         <div className="from-primary to-primary absolute z-10 hidden h-full w-full bg-gradient-to-b via-transparent lg:block "></div>
         <div className=" grid grid-cols-3 gap-[10px] lg:grid-cols-4 lg:gap-[30px]">
           <div className="flex flex-col gap-[10px] lg:gap-[30px]">
-            <Image src={img1} alt="" />
-            <Image src={img2} alt="" />
+            <Image src={img1} alt="James Crypto Guru" placeholder="blur" />
+            <Image src={img2} alt="James Crypto Guru" placeholder="blur" />
           </div>
           <div className="flex flex-col gap-[10px] lg:gap-[30px]">
-            <Image src={img3} alt="" />
-            <Image src={img4} alt="" className="hidden lg:block" />
-            <Image src={img5} alt="" className="hidden lg:block" />
+            <Image src={img3} alt="James Crypto Guru" placeholder="blur" />
+            <Image
+              src={img4}
+              alt="James Crypto Guru"
+              placeholder="blur"
+              className="hidden lg:block"
+            />
+            <Image
+              src={img5}
+              alt="James Crypto Guru"
+              placeholder="blur"
+              className="hidden lg:block"
+            />
 
-            <Image src={img10} alt="" className="block lg:hidden" />
-            <Image src={img11} alt="" className="block lg:hidden" />
-            <Image src={img9} alt="" className="block lg:hidden" />
+            <Image
+              src={img10}
+              alt="James Crypto Guru"
+              placeholder="blur"
+              className="block lg:hidden"
+            />
+            <Image
+              src={img11}
+              alt="James Crypto Guru"
+              placeholder="blur"
+              className="block lg:hidden"
+            />
+            <Image
+              src={img9}
+              alt="James Crypto Guru"
+              placeholder="blur"
+              className="block lg:hidden"
+            />
           </div>
           <div className="flex flex-col gap-[10px] lg:gap-[30px]">
-            <Image src={img6} alt="" />
-            <Image src={img7} alt="" />
+            <Image src={img6} alt="James Crypto Guru" placeholder="blur" />
+            <Image src={img7} alt="James Crypto Guru" placeholder="blur" />
           </div>
           <div className="hidden flex-col gap-[10px] lg:flex lg:gap-[30px]">
-            <Image src={img8} alt="" />
-            <Image src={img9} alt="" />
+            <Image src={img8} alt="James Crypto Guru" placeholder="blur" />
+            <Image src={img9} alt="James Crypto Guru" placeholder="blur" />
           </div>
         </div>
       </div>

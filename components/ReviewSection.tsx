@@ -10,7 +10,7 @@ export const CustomDot = ({ onClick, active, index, carouselState }: any) => {
   const { currentSlide } = carouselState;
   return (
     <li
-      className={`mr-1 h-px transition-all ${
+      className={`mr-1 h-[2px] cursor-pointer transition-all ${
         active ? "bg-secondary w-6" : "w-4 bg-white"
       }`}
       onClick={() => onClick()}
@@ -25,7 +25,7 @@ const ReviewSection = () => {
     mobile: {
       breakpoint: { max: 640, min: 0 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
   };
 
@@ -46,7 +46,7 @@ const ReviewSection = () => {
           dotListClass=""
           itemClass="px-2"
         >
-          <div className="gray-gradient mx-auto w-full max-w-3xl rounded-3xl xl:mx-0">
+          <div className="gray-gradient drag-none mx-auto w-full max-w-3xl cursor-grab  select-none rounded-3xl xl:mx-0">
             <div className="flex items-start gap-[22px] px-[30px] py-10 md:gap-7 md:px-9 md:py-12">
               <Image src={reviewIcon} alt="Review" />
               <div className="space-y-2">

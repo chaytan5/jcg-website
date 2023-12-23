@@ -22,7 +22,20 @@
     -webkit-text-stroke: 2px transparent;
   }
 
+  .dark-gray-gradient {
+    background: linear-gradient(126deg, #191A1B 29.13%, #131415 83.05%);
+  }
+
   .light-gray-gradient {
     background: linear-gradient(90deg, rgba(217, 217, 217, 0.08) 15.5%, rgba(217, 217, 217, 0.02) 105.14%);
   }
+
+  .drag-none {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
+
 }

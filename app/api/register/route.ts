@@ -25,13 +25,11 @@ export async function POST(request: NextRequest) {
       email,
     });
 
-    const savedUser = await newUser.save();
-
-    console.log({ savedUser });
+    await newUser.save();
 
     return NextResponse.json(
       {
-        message: "User registered successfully",
+        message: "Registered successfully",
         success: true,
       },
       { status: 201 },

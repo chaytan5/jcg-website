@@ -1,6 +1,9 @@
 const CourseInfoSection = () => {
   return (
-    <section className="relative mx-auto w-11/12 max-w-screen-xl">
+    <section
+      id="whoItIsFor"
+      className="relative mx-auto w-11/12 max-w-screen-xl"
+    >
       <div className="yellow-gradient-bg absolute inset-0 m-auto grid h-[350px] w-full place-items-center opacity-15 blur-[120px] md:hidden"></div>
       <div className="space-y-10 text-center">
         <h2 className="text-[42px] font-bold md:text-5xl">

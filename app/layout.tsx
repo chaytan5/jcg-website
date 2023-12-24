@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
 
 import "./globals.css";
 
@@ -20,7 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html className="bg-primary" lang="en">
-      <body className={`${poppins.className} bg-primary`}>{children}</body>
+      <body className={`${poppins.className} bg-primary overscroll-x-none`}>
+        {children}
+      </body>
+      <Toaster position="top-center" theme="dark" />
     </html>
   );
 }

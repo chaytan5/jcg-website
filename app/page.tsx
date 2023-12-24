@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="space-y-[90px] bg-primary text-white md:space-y-32">
+      <main className="space-y-[90px] scroll-smooth bg-primary text-white md:space-y-32">
         <HeroSection />
         <InfoSection />
         <VideoSection />

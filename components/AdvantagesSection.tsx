@@ -5,6 +5,7 @@ import { LuArrowUpRight, LuFileText } from "react-icons/lu";
 import advantageIcon from "@/assets/icons/advantage.svg";
 import useMatchMedia from "@/hooks/useMediaQuery";
 import { useState } from "react";
+import { SignUpDialog } from "./SignUpDialog";
 
 const BeforeCard = () => {
   return (
@@ -53,12 +54,14 @@ const BeforeCard = () => {
           </p>
         </div>
 
-        <button className="from-lightYellow to-darkYellow text-primary grid w-full place-items-center whitespace-nowrap rounded-full bg-gradient-to-r text-sm font-medium ">
-          <Link href={"/"} className="flex items-center gap-[10px] px-6 py-3">
-            <p>Make a First Step to Change</p>
-            <LuArrowUpRight size={18} className="text-primary" />
-          </Link>
-        </button>
+        <SignUpDialog>
+          <button className="from-lightYellow to-darkYellow text-primary grid w-full place-items-center whitespace-nowrap rounded-full bg-gradient-to-r text-sm font-medium ">
+            <div className="flex items-center gap-[10px] px-6 py-3">
+              <p>Make a First Step to Change</p>
+              <LuArrowUpRight size={18} className="text-primary" />
+            </div>
+          </button>
+        </SignUpDialog>
       </div>
     </div>
   );
@@ -126,12 +129,14 @@ const AfterCard = () => {
           </p>
         </div>
 
-        <button className="yellow-gradient-bg text-primary grid w-full place-items-center whitespace-nowrap  rounded-full text-sm font-medium ">
-          <Link href={"/"} className="flex items-center gap-[10px] px-6 py-3">
-            <p className="text-base">Sign Up & Save 10%*</p>
-            <LuArrowUpRight size={18} className="text-primary" />
-          </Link>
-        </button>
+        <SignUpDialog>
+          <button className="yellow-gradient-bg text-primary grid w-full place-items-center whitespace-nowrap  rounded-full text-sm font-medium ">
+            <div className="flex items-center gap-[10px] px-6 py-3">
+              <p className="text-base">Sign Up & Save 10%*</p>
+              <LuArrowUpRight size={18} className="text-primary" />
+            </div>
+          </button>
+        </SignUpDialog>
       </div>
     </div>
   );
@@ -142,7 +147,10 @@ const AdvantagesSection = () => {
   const [tab, setTab] = useState<String>("before");
 
   return (
-    <section className="mx-auto w-11/12 max-w-screen-xl space-y-11 md:space-y-16">
+    <section
+      id="advantages"
+      className="mx-auto w-11/12 max-w-screen-xl space-y-11 md:space-y-16"
+    >
       <h2 className="md:yellow-gradient-text py-2 text-center text-[42px] font-bold text-white md:text-5xl ">
         Advantages
       </h2>

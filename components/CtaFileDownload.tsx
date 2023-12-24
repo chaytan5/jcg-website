@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { LuFileText } from "react-icons/lu";
+import DownloadForm from "./DownloadForm";
 
 const CtaFileDownload = () => {
   return (
@@ -15,38 +16,7 @@ const CtaFileDownload = () => {
         </p>
       </div>
       <div className="yellow-gradient-bg grid h-full w-full place-items-center ">
-        <div className="space-y-5 px-8 py-8 lg:pl-[50px] lg:pr-[70px] ">
-          <input
-            type="email"
-            required
-            placeholder="Enter your email"
-            className="border-secondary text-secondary placeholder:text-secondary w-full rounded-lg border bg-white/80 px-5 py-[10px]"
-          />
-
-          <div className="flex flex-wrap items-center gap-[14px]">
-            <button className="bg-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium text-white ">
-              <Link
-                href={"/"}
-                className="flex items-center gap-[10px] px-6 py-3"
-              >
-                <p>Get free pdf</p>
-                <LuFileText size={18} className="text-white" />
-              </Link>
-            </button>
-            <div className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                name="privacy policy"
-                id="privacy-policy"
-                // checked
-                className="h-4 w-4 appearance-none rounded-full bg-white/60 "
-              />
-              <p className="text-primary text-xs">
-                I agree with <span className="underline">Privacy Policy</span>
-              </p>
-            </div>
-          </div>
-        </div>
+        <DownloadForm />
       </div>
     </div>
   );

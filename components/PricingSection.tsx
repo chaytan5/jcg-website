@@ -4,6 +4,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 import lightPackage from "@/assets/images/light-package.png";
 import mediumPackage from "@/assets/images/medium-package.png";
 import vipPackage from "@/assets/images/vip-package.png";
+import { SignUpDialog } from "./SignUpDialog";
 
 const PricingSection = () => {
   return (
@@ -64,15 +65,14 @@ const PricingSection = () => {
                 </ul>
               </div>
               <div>
-                <button className="yellow-gradient-bg text-primary grid  w-full place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
-                  <Link
-                    href={"/"}
-                    className="flex items-center gap-[10px] px-6 py-3"
-                  >
-                    <p>Sign up for the course</p>
-                    <LuArrowUpRight size={18} className="text-primary" />
-                  </Link>
-                </button>
+                <SignUpDialog>
+                  <button className="yellow-gradient-bg text-primary grid  w-full place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+                    <div className="flex items-center gap-[10px] px-6 py-3">
+                      <p>Sign up for the course</p>
+                      <LuArrowUpRight size={18} className="text-primary" />
+                    </div>
+                  </button>
+                </SignUpDialog>
               </div>
             </div>
           </div>
@@ -119,15 +119,14 @@ const PricingSection = () => {
                 </p>
               </div>
               <div>
-                <button className="yellow-gradient-bg text-primary grid  w-full place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
-                  <Link
-                    href={"/"}
-                    className="flex items-center gap-[10px] px-6 py-3"
-                  >
-                    <p>Sign up for the course</p>
-                    <LuArrowUpRight size={18} className="text-primary" />
-                  </Link>
-                </button>
+                <SignUpDialog>
+                  <button className="yellow-gradient-bg text-primary grid  w-full place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+                    <div className="flex items-center gap-[10px] px-6 py-3">
+                      <p>Sign up for the course</p>
+                      <LuArrowUpRight size={18} className="text-primary" />
+                    </div>
+                  </button>
+                </SignUpDialog>
               </div>
             </div>
           </div>
@@ -178,15 +177,14 @@ const PricingSection = () => {
                 </p>
               </div>
               <div>
-                <button className="yellow-gradient-bg text-primary grid  w-full place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
-                  <Link
-                    href={"/"}
-                    className="flex items-center gap-[10px] px-6 py-3"
-                  >
-                    <p>Sign up for the course</p>
-                    <LuArrowUpRight size={18} className="text-primary" />
-                  </Link>
-                </button>
+                <SignUpDialog>
+                  <button className="yellow-gradient-bg text-primary grid  w-full place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+                    <div className="flex items-center gap-[10px] px-6 py-3">
+                      <p>Sign up for the course</p>
+                      <LuArrowUpRight size={18} className="text-primary" />
+                    </div>
+                  </button>
+                </SignUpDialog>
               </div>
             </div>
           </div>
@@ -194,8 +192,10 @@ const PricingSection = () => {
 
         <div>
           <Link
-            href={"/"}
+            href={"https://jamescryptoguru.gumroad.com/"}
+            target="_blank"
             className="mx-auto flex w-fit items-center gap-4 p-2"
+            rel="noreferrer noopener"
           >
             <p className="yellow-gradient-text text-lg font-medium">
               James&apos; Other Courses

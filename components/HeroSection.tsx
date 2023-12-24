@@ -4,10 +4,12 @@ import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import gumroadIcon from "@/assets/icons/gumroad-icon.svg";
 import HeroSideButton from "./HeroSideButton";
+import { SignUpDialog } from "./SignUpDialog";
+import HeroForm from "./HeroForm";
 
 const HeroSection = () => {
   return (
-    <section className="relative">
+    <section className="relative" id="hero">
       <div className="-top-12 left-0 hidden w-full place-items-center text-center uppercase md:absolute md:grid lg:-top-20">
         <p className="font-outline text-primary bg-gradient-to-b from-[#806322] to-transparent to-75% bg-clip-text text-[150px] font-bold tracking-tight lg:text-[240px]">
           Course
@@ -84,15 +86,18 @@ const HeroSection = () => {
           </div>
 
           <div className="flex items-center justify-center gap-3 md:hidden">
-            <button className="yellow-gradient-bg text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
-              <Link href={"/"} className="flex items-center gap-2 px-4 py-3">
-                <p>Sign Up & Save 10%*</p>
-                <LuArrowUpRight size={18} />
-              </Link>
-            </button>
+            <SignUpDialog>
+              <button className="yellow-gradient-bg text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+                <div className="flex items-center gap-2 px-4 py-3">
+                  <p>Sign Up & Save 10%*</p>
+                  <LuArrowUpRight size={18} />
+                </div>
+              </button>
+            </SignUpDialog>
+
             <button className=" text-primary grid place-items-center  rounded-full text-sm font-medium ">
               <Link
-                href={"/"}
+                href={"#trailer"}
                 className="yellow-gradient-text flex items-center gap-2 "
               >
                 <p>More Information</p>
@@ -101,38 +106,10 @@ const HeroSection = () => {
             </button>
           </div>
 
-          <div className="hidden space-y-5 md:block">
-            <div className="flex items-center gap-6">
-              <input
-                className="bg-lightGray/10 max-w-sm flex-grow rounded-xl border border-white/30 bg-gradient-to-r  px-5 py-[10px] text-base placeholder:text-white/40"
-                type="email"
-                placeholder="Enter your email"
-              />
-              <button className="from-lightYellow to-darkYellow  text-primary grid place-items-center whitespace-nowrap rounded-full bg-gradient-to-r text-sm font-medium ">
-                <Link
-                  href={"/"}
-                  className="flex items-center gap-[10px] px-6 py-3"
-                >
-                  <p>Sign up for the course</p>
-                  <LuArrowUpRight size={18} className="text-primary" />
-                </Link>
-              </button>
-            </div>
-            <div className="flex items-center gap-3">
-              <input
-                type="checkbox"
-                name="privacy policy"
-                id="privacy-policy"
-                className="border-darkYellow bg-gunmetal accent-darkYellow checked:bg-darkYellow checked:accent-darkYellow focus:text-darkYellow h-4 w-4 appearance-none rounded-full border "
-              />
-              <p>
-                I agree with <span className="underline">Privacy Policy</span>
-              </p>
-            </div>
-          </div>
+          <HeroForm />
         </div>
         <div className="max-w-md self-center md:max-w-xl md:self-start md:pb-16 ">
-          <Image className="" src={heroImg} alt="James Crypto Guru" />
+          <Image src={heroImg} alt="James Crypto Guru" />
         </div>
       </div>
     </section>

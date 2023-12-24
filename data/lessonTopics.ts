@@ -13,7 +13,7 @@ export const topics = [
   },
   {
     name: "The law of investments",
-    desc: "James's Philosophy of investing in crypto and stocks.",
+    desc: "James' Philosophy of investing in crypto and stocks.",
   },
   {
     name: "The Law of entrepreneurship",

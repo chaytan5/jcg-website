@@ -1,5 +1,5 @@
 "use client";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -12,6 +12,8 @@ import {
 import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import { useForm, SubmitHandler } from "react-hook-form";
+import axios from "axios";
+import { toast } from "sonner";
 
 type Inputs = {
   email: string;
@@ -19,14 +21,36 @@ type Inputs = {
 };
 
 export function SignUpDialog({ children }: { children: ReactNode }) {
+  const [loading, setLoading] = useState(false);
+
   const {
     register,
     handleSubmit,
     watch,
+    reset,
+    formState,
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    try {
+      setLoading(true);
+      const response = await axios.post("/api/register", data);
+
+      toast.success(response.data.message);
+    } catch (error: any) {
+      const { data } = error.response;
+      toast.error(data.error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    if (formState.isSubmitSuccessful) {
+      reset({ email: "", privacyPolicy: false });
+    }
+  }, [formState, reset]);
 
   return (
     <Dialog>
@@ -89,12 +113,19 @@ export function SignUpDialog({ children }: { children: ReactNode }) {
           </div>
           <div className="flex flex-col-reverse items-center justify-center gap-7 sm:flex-row sm:justify-normal sm:gap-4">
             <button
+              disabled={loading}
               type="submit"
-              className="yellow-gradient-bg text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium "
+              className="yellow-gradient-bg text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium disabled:opacity-70"
             >
               <div className="flex items-center gap-[10px] px-6 py-3">
-                <p>Send</p>
-                <LuArrowUpRight size={18} className="text-primary" />
+                {loading ? (
+                  "Please wait"
+                ) : (
+                  <>
+                    <p>Send</p>
+                    <LuArrowUpRight size={18} className="text-primary" />
+                  </>
+                )}
               </div>
             </button>
 

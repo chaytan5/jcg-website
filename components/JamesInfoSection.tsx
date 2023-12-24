@@ -52,9 +52,14 @@ const JamesInfoSection = () => {
 
           <div>
             <button className="yellow-gradient-bg text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
-              <Link href={"/"} className="flex items-center gap-2 px-6 py-3">
+              <Link
+                href={"https://jamescryptoguru.gumroad.com/"}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="flex items-center gap-2 px-6 py-3"
+              >
                 <p>All courses on</p>
-                <Image src={gumroadIcon} className="w-28 " alt="Gumroad" />
+                <Image src={gumroadIcon} className="w-28" alt="Gumroad" />
               </Link>
             </button>
           </div>
@@ -116,14 +121,19 @@ const JamesInfoSection = () => {
 
         <div className="flex items-center justify-center gap-4">
           <button className="yellow-gradient-bg text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
-            <Link href={"/"} className="flex items-center gap-2 px-6 py-3">
+            <Link
+              href={"https://jamescryptoguru.gumroad.com/"}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="flex items-center gap-2 px-6 py-3"
+            >
               <p>Buy on</p>
               <Image src={gumroadIcon} className="w-20" alt="Gumroad" />
             </Link>
           </button>
           <button className=" text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
             <Link
-              href={"/"}
+              href={"#trailer"}
               className="yellow-gradient-text flex items-center gap-2 "
             >
               <p>More Information</p>

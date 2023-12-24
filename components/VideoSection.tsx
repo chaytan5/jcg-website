@@ -2,7 +2,10 @@ import React from "react";
 
 const VideoSection = () => {
   return (
-    <section className="relative z-10 mx-auto w-11/12 max-w-screen-xl space-y-16">
+    <section
+      id="trailer"
+      className="relative z-10 mx-auto w-11/12 max-w-screen-xl space-y-16"
+    >
       <div className="space-y-6 text-center">
         <h2 className="text-balance text-4xl font-bold leading-[60px] md:text-6xl">
           Welcome to my world of{" "}

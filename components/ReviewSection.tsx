@@ -30,7 +30,7 @@ const ReviewSection = () => {
   };
 
   return (
-    <section className="relative mx-auto w-11/12 max-w-screen-xl ">
+    <section id="reviews" className="relative mx-auto w-11/12 max-w-screen-xl ">
       {isMobile ? (
         <Carousel
           swipeable={true}

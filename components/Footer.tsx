@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
 
           <div className="space-y-5 ">
-            <h6 className="yellow-gradient-text text-center text-lg font-bold lg:text-left lg:text-left">
+            <h6 className="yellow-gradient-text text-center text-lg font-bold lg:text-left">
               Navigation
             </h6>
             <ul className="text-footer flex max-w-sm flex-row flex-wrap justify-center gap-4 font-medium lg:max-w-full lg:flex-col">
@@ -49,7 +49,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="max-w-xl  ">
+          <div className="max-w-xl lg:max-w-2xl ">
             <div className="flex h-full flex-col justify-between ">
               <div className=" flex flex-col justify-center gap-5 pt-8 lg:pt-0">
                 <h6 className="yellow-gradient-text text-center text-lg font-bold lg:text-left">

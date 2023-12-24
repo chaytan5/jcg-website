@@ -36,7 +36,7 @@ const Header = () => {
             <Image src={jcgLogo} alt="James Crypto Guru" />
           </Link>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center md:gap-4">
           <SignUpDialog>
             <button className="yellow-gradient-bg text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
               <div className="flex items-center gap-[10px] px-6 py-3">
@@ -45,7 +45,7 @@ const Header = () => {
               </div>
             </button>
           </SignUpDialog>
-          <button className="bg-gunmetal hidden place-items-center  whitespace-nowrap rounded-full text-sm  font-medium text-white md:grid ">
+          <button className="bg-gunmetal hidden place-items-center  whitespace-nowrap rounded-full text-sm  font-medium text-white md:grid">
             <Link
               href="https://www.youtube.com/@JamesCryptoGuru"
               target="_blank"
@@ -69,7 +69,7 @@ const Header = () => {
           menuOpen ? "left-0" : "-left-full"
         }`}
       >
-        <div className="pb10 flex h-full flex-col gap-14 px-16 py-6 text-white ">
+        <div className="flex h-full flex-col gap-14 whitespace-nowrap px-16 py-6 pb-10 text-white ">
           <div className="flex items-center gap-14">
             <div
               className="cursor-pointer rounded-full bg-black p-3"

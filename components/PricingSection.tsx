@@ -83,7 +83,7 @@ const PricingSection = () => {
                 alt="Medium package"
                 className="rounded-t-4xl h-full object-cover opacity-70"
               />
-              <p className="absolute bottom-5 left-5 w-full text-[26px] font-bold tracking-wider drop-shadow">
+              <p className="absolute bottom-5 left-5 text-[26px] font-bold tracking-wider drop-shadow">
                 Medium package
               </p>
             </div>

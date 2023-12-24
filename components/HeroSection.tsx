@@ -83,14 +83,14 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-4 md:hidden">
+          <div className="flex items-center justify-center gap-3 md:hidden">
             <button className="yellow-gradient-bg text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
-              <Link href={"/"} className="flex items-center gap-2 px-5 py-3">
+              <Link href={"/"} className="flex items-center gap-2 px-4 py-3">
                 <p>Sign Up & Save 10%*</p>
                 <LuArrowUpRight size={18} />
               </Link>
             </button>
-            <button className=" text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+            <button className=" text-primary grid place-items-center  rounded-full text-sm font-medium ">
               <Link
                 href={"/"}
                 className="yellow-gradient-text flex items-center gap-2 "

@@ -33,7 +33,7 @@ const ContactSection = () => {
                     <h4 className="text-xl font-bold md:text-2xl">Email</h4>
                     <Link
                       href="mailto:contact@jamescryptoguru.com"
-                      className="yellow-gradient-text text-base font-semibold md:text-lg"
+                      className="yellow-gradient-text text-sm font-semibold sm:text-base md:text-lg"
                     >
                       contact@jamescryptoguru.com
                     </Link>

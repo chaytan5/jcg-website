@@ -32,7 +32,6 @@ const TestimonialCarousel = () => {
       breakpoint: { max: 640, min: 0 },
       items: 1,
       slidesToSlide: 1,
-      partialVisibilityGutter: 40,
     },
   };
   return (
@@ -51,7 +50,6 @@ const TestimonialCarousel = () => {
       dotListClass=""
       itemClass=""
       customDot={<CustomDot />}
-      partialVisible
     >
       <Image
         priority

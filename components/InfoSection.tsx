@@ -3,7 +3,7 @@ import sphereOld from "@/assets/images/sphere.png";
 
 const InfoSection = () => {
   return (
-    <section className="relative">
+    <section className="relative ">
       <div className="left-0 top-0 hidden h-[400px] w-[400px] md:absolute md:block">
         <Image src={sphereOld} alt="Sphere background" />
       </div>

@@ -32,7 +32,6 @@ const CTA = () => {
               type="checkbox"
               name="privacy policy"
               id="privacy-policy"
-              // checked
               className="h-4 w-4 appearance-none rounded-full bg-white/60 "
             />
             <p className="text-primary text-xs">
@@ -42,9 +41,9 @@ const CTA = () => {
         </div>
       </div>
 
-      <div className=" absolute -bottom-5 -right-4 z-10 ml-auto h-auto w-[280px] md:bottom-0 md:right-5 md:w-[380px] lg:w-[420px]">
+      {/* <div className=" absolute -bottom-5 -right-4 z-10 ml-auto h-auto w-[280px] md:bottom-0 md:right-5 md:w-[380px] lg:w-[420px]">
         <Image src={jamesPhoto} alt="James Crypto Guru" />
-      </div>
+      </div> */}
     </div>
   );
 };

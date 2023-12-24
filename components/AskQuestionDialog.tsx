@@ -98,7 +98,7 @@ export function AskQuestionDialog({ children }: { children: ReactNode }) {
                     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
                 })}
               />
-              <p className="text-secondary h-1 text-sm">
+              <p className="h-1 text-xs text-red-500">
                 {errors.email && <span>Please enter a valid Email</span>}
               </p>
             </div>
@@ -119,7 +119,7 @@ export function AskQuestionDialog({ children }: { children: ReactNode }) {
                   },
                 })}
               ></textarea>
-              <p className="text-secondary h-1 text-sm">
+              <p className="h-1 text-xs text-red-500">
                 {errors.message && <span>{errors.message.message}</span>}
               </p>
             </div>
@@ -155,7 +155,7 @@ export function AskQuestionDialog({ children }: { children: ReactNode }) {
                 </p>
               </div>
 
-              <p className="text-secondary h-1 text-center text-sm">
+              <p className="h-1 text-center text-xs text-red-500">
                 {errors.privacyPolicy && <span>This field is required</span>}
               </p>
             </div>

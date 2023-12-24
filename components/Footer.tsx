@@ -10,6 +10,7 @@ import {
   FaTelegram,
 } from "react-icons/fa6";
 import { MdOutlineAlternateEmail } from "react-icons/md";
+import SubscribeForm from "./SubscribeForm";
 
 const Footer = () => {
   return (
@@ -56,30 +57,37 @@ const Footer = () => {
                   Subscribe to newsletters
                 </h6>
 
-                <div className="flex flex-col items-center gap-5 lg:flex-row lg:gap-6">
-                  <input
-                    className=" light-gray-gradient w-full flex-grow rounded-xl border border-white/30  px-5 py-[10px] text-base placeholder:text-white/40"
-                    type="email"
-                    placeholder="Enter your email"
-                  />
-                  <button className="from-lightYellow to-darkYellow  text-primary grid place-items-center whitespace-nowrap rounded-full bg-gradient-to-r text-sm font-medium ">
-                    <Link
-                      href={"/"}
-                      className="flex items-center gap-[10px] px-6 py-3"
-                    >
-                      <p>Subscribe</p>
-                    </Link>
-                  </button>
-                </div>
+                {/* <form>
+                  <div className="flex flex-col items-center gap-5 lg:flex-row lg:gap-6">
+                    <input
+                      className=" light-gray-gradient w-full flex-grow rounded-xl border border-white/30  px-5 py-[10px] text-base placeholder:text-white/40"
+                      type="email"
+                      placeholder="Enter your email"
+                    />
+                    <button className="from-lightYellow to-darkYellow  text-primary grid place-items-center whitespace-nowrap rounded-full bg-gradient-to-r text-sm font-medium ">
+                      <Link
+                        href={"/"}
+                        className="flex items-center gap-[10px] px-6 py-3"
+                      >
+                        <p>Subscribe</p>
+                      </Link>
+                    </button>
+                  </div>
+                </form> */}
+
+                <SubscribeForm />
 
                 <p className="text-footer text-sm">
                   or via email:{" "}
-                  <span className="text-secondary">
+                  <Link
+                    href="mailto:contact@jamescryptoguru.com"
+                    className="text-secondary"
+                  >
                     contact@jamescryptoguru.com
-                  </span>
+                  </Link>
                 </p>
               </div>
-              <div className="flex gap-5 pt-10 text-2xl text-white/50 lg:pt-0">
+              <div className="flex justify-center gap-5 pt-10 text-2xl text-white/50 md:justify-normal lg:pt-0">
                 <FaDiscord />
                 <FaYoutube />
                 <FaXTwitter />

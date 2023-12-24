@@ -3,7 +3,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { LuArrowUpRight } from "react-icons/lu";
 import { toast } from "sonner";
 
 type Inputs = {
@@ -11,7 +10,7 @@ type Inputs = {
   privacyPolicy: boolean;
 };
 
-const HeroForm = () => {
+const SubscribeForm = () => {
   const [loading, setLoading] = useState(false);
 
   const {
@@ -26,7 +25,7 @@ const HeroForm = () => {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     try {
       setLoading(true);
-      const response = await axios.post("/api/register", data);
+      const response = await axios.post("/api/subscribe", data);
 
       toast.success(response.data.message);
     } catch (error: any) {
@@ -45,7 +44,7 @@ const HeroForm = () => {
 
   return (
     <form
-      className="hidden space-y-5 md:block"
+      className="flex flex-col items-center gap-5 lg:flex-row lg:gap-6"
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="space-y-1">
@@ -63,17 +62,10 @@ const HeroForm = () => {
 
           <button
             disabled={loading}
-            className="yellow-gradient-bg  text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium disabled:opacity-70"
+            className="yellow-gradient-bg text-primary grid w-32 place-items-center whitespace-nowrap rounded-full text-sm font-medium disabled:opacity-70"
           >
-            <div className="flex items-center gap-[10px] px-6 py-3">
-              {loading ? (
-                "Please wait"
-              ) : (
-                <>
-                  <p>Sign up for the course</p>
-                  <LuArrowUpRight size={18} className="text-primary" />
-                </>
-              )}
+            <div className="flex items-center gap-[10px]  py-3">
+              {loading ? "Please wait" : <p>Subscribe</p>}
             </div>
           </button>
         </div>
@@ -81,25 +73,8 @@ const HeroForm = () => {
           {errors.email && <span>Please enter a valid Email</span>}
         </p>
       </div>
-      <div className="space-y-1">
-        <div className="flex items-center gap-3">
-          <input
-            type="checkbox"
-            id="privacy-policy"
-            className="border-darkYellow bg-gunmetal accent-darkYellow checked:bg-darkYellow checked:accent-darkYellow focus:text-darkYellow h-4 w-4 appearance-none rounded-full border "
-            {...register("privacyPolicy", { required: true })}
-          />
-
-          <p>
-            I agree with <span className="underline">Privacy Policy</span>
-          </p>
-        </div>
-        <p className="h-1 text-xs text-red-500">
-          {errors.privacyPolicy && <span>This field is required</span>}
-        </p>
-      </div>
     </form>
   );
 };
 
-export default HeroForm;
+export default SubscribeForm;

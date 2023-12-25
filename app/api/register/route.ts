@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
 
     console.log(reqBody);
 
-    const { email, packageSelected } = reqBody;
+    const { email } = reqBody;
 
     const registeredUser = await RegisteredUser.findOne({ email });
 
@@ -23,7 +23,6 @@ export async function POST(request: NextRequest) {
 
     const newUser = new RegisteredUser({
       email,
-      packageSelected,
     });
 
     await newUser.save();

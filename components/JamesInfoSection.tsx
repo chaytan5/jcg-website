@@ -17,7 +17,10 @@ import { LuArrowUpRight } from "react-icons/lu";
 
 const JamesInfoSection = () => {
   return (
-    <section className="mx-auto w-11/12 max-w-screen-xl">
+    <section
+      className="mx-auto w-11/12 max-w-screen-xl scroll-mt-32"
+      id="about-james"
+    >
       <h2 className="block pb-20 text-center text-[42px] font-bold lg:hidden">
         Who is James?
       </h2>

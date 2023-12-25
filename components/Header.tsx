@@ -8,6 +8,50 @@ import { useState } from "react";
 import { ImCross } from "react-icons/im";
 import { SignUpDialog } from "./SignUpDialog";
 
+const navLinks = [
+  {
+    title: "About James",
+    link: "#about-james",
+  },
+  {
+    title: "Trailer",
+    link: "#trailer",
+  },
+  {
+    title: "Pricing",
+    link: "#pricing",
+  },
+  {
+    title: "Testimonials",
+    link: "#testimonials",
+  },
+  {
+    title: "Who is it for",
+    link: "#who-is-it-for",
+  },
+  {
+    title: "Topics",
+    link: "#topics",
+  },
+  {
+    title: "10% Discount Deal",
+    link: "#discount-deal",
+  },
+  {
+    title: "Who is it for",
+    link: "#who-is-it-for",
+  },
+
+  {
+    title: "FAQ",
+    link: "#faq",
+  },
+  {
+    title: "Contact",
+    link: "#contact",
+  },
+];
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -60,11 +104,13 @@ const Header = () => {
       </div>
 
       <div
-        className={`bg-primary/90 fixed inset-0 z-30 h-full w-full ${
+        className={`bg-primary/90 fixed inset-0 z-30 h-full w-full backdrop-blur-sm ${
           menuOpen ? "block" : "hidden"
         }`}
+        onClick={handleMenuClose}
       />
       <nav
+        onClick={(e) => e.stopPropagation()}
         className={`fixed top-0 z-40 h-dvh w-full overflow-y-auto bg-[#0B0C0D] text-white transition-all duration-500  ease-out md:max-w-lg ${
           menuOpen ? "left-0" : "-left-full"
         }`}
@@ -77,12 +123,21 @@ const Header = () => {
             >
               <ImCross size={18} />
             </div>
-            <Image src={jcgLogo} alt="JCG logo" />
+            <Link href={"/"} onClick={handleMenuClose}>
+              <Image src={jcgLogo} alt="JCG logo" />
+            </Link>
           </div>
 
           <div>
-            <ul className="space-y-6 text-sm font-medium">
-              <li>About James</li>
+            <ul className="text-sm font-medium">
+              {navLinks.map((item, i) => (
+                <Link key={i} href={item.link}>
+                  <li onClick={handleMenuClose} className="py-3">
+                    {item.title}
+                  </li>
+                </Link>
+              ))}
+              {/* <li>About James</li>
               <li>Trailer</li>
               <li>Pricing</li>
               <li>Testimonials</li>
@@ -90,21 +145,20 @@ const Header = () => {
               <li>Topics</li>
               <li>10% Discount Deal</li>
               <li>FAQ</li>
-              <li>Contact</li>
+              <li>Contact</li> */}
             </ul>
           </div>
 
           <div>
             <div className="mb-5 mt-10">
-              <button className="yellow-gradient-bg text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
-                <Link
-                  href={"/"}
-                  className="flex items-center gap-[10px] px-6 py-3"
-                >
-                  <p>Sign up for the course</p>
-                  <LuArrowUpRight size={18} className="text-primary" />
-                </Link>
-              </button>
+              <SignUpDialog>
+                <button className="yellow-gradient-bg text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+                  <div className="flex items-center gap-[10px] px-6 py-3">
+                    <p>Sign up for the course</p>
+                    <LuArrowUpRight size={18} className="text-primary" />
+                  </div>
+                </button>
+              </SignUpDialog>
             </div>
 
             <div className="pb-10">

@@ -16,6 +16,53 @@ import t11 from "@/assets/images/testimonials/testimonial-11.png";
 import Image from "next/image";
 import { CustomDot } from "./ReviewSection";
 
+const testimonials = [
+  {
+    id: 1,
+    image: t4,
+  },
+  {
+    id: 2,
+    image: t10,
+  },
+  {
+    id: 3,
+    image: t9,
+  },
+  {
+    id: 4,
+    image: t11,
+  },
+  {
+    id: 5,
+    image: t1,
+  },
+  {
+    id: 6,
+    image: t2,
+  },
+  {
+    id: 7,
+    image: t3,
+  },
+  {
+    id: 8,
+    image: t5,
+  },
+  {
+    id: 9,
+    image: t6,
+  },
+  {
+    id: 10,
+    image: t7,
+  },
+  {
+    id: 11,
+    image: t8,
+  },
+];
+
 const TestimonialCarousel = () => {
   const responsive = {
     desktop: {
@@ -51,72 +98,15 @@ const TestimonialCarousel = () => {
       itemClass=""
       customDot={<CustomDot />}
     >
-      <Image
-        priority
-        src={t1}
-        alt="Testimonial"
-        className="drag-none cursor-grab select-none"
-      />
-      <Image
-        priority
-        src={t2}
-        alt="Testimonial"
-        className="drag-none cursor-grab select-none"
-      />
-      <Image
-        priority
-        src={t3}
-        alt="Testimonial"
-        className="drag-none cursor-grab select-none"
-      />
-      <Image
-        priority
-        src={t4}
-        alt="Testimonial"
-        className="drag-none cursor-grab select-none"
-      />
-      <Image
-        priority
-        src={t5}
-        alt="Testimonial"
-        className="drag-none cursor-grab select-none"
-      />
-      <Image
-        priority
-        src={t6}
-        alt="Testimonial"
-        className="drag-none cursor-grab select-none"
-      />
-      <Image
-        priority
-        src={t7}
-        alt="Testimonial"
-        className="drag-none cursor-grab select-none"
-      />
-      <Image
-        priority
-        src={t8}
-        alt="Testimonial"
-        className="drag-none cursor-grab select-none"
-      />
-      <Image
-        priority
-        src={t9}
-        alt="Testimonial"
-        className="drag-none cursor-grab select-none"
-      />
-      <Image
-        priority
-        src={t10}
-        alt="Testimonial"
-        className="drag-none cursor-grab select-none"
-      />
-      <Image
-        priority
-        src={t11}
-        alt="Testimonial"
-        className="drag-none cursor-grab select-none"
-      />
+      {testimonials.map((item) => (
+        <Image
+          key={item.id}
+          priority
+          src={item.image}
+          alt="Testimonial"
+          className="drag-none cursor-grab select-none"
+        />
+      ))}
     </Carousel>
   );
 };

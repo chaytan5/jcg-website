@@ -149,7 +149,7 @@ const AdvantagesSection = () => {
   return (
     <section
       id="advantages"
-      className="mx-auto w-11/12 max-w-screen-xl space-y-11 md:space-y-16"
+      className="mx-auto w-11/12 max-w-screen-xl scroll-mt-32 space-y-11 md:space-y-16"
     >
       <h2 className="md:yellow-gradient-text py-2 text-center text-[42px] font-bold text-white md:text-5xl ">
         Advantages

@@ -11,7 +11,10 @@ const ContactSection = () => {
       <div className="bottom-0 left-0 z-0 hidden xl:absolute xl:block">
         <Image src={artBg} alt="Background artwork" />
       </div>
-      <section className="bg-contact-texture relative mx-auto w-11/12 max-w-screen-xl">
+      <section
+        id="contact"
+        className="bg-contact-texture relative mx-auto w-11/12 max-w-screen-xl scroll-mt-32"
+      >
         <div className="relative z-10 space-y-16">
           <h2 className="text-center text-[42px] font-bold md:text-6xl">
             Get in Touch

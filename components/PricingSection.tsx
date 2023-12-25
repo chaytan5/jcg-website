@@ -8,7 +8,10 @@ import { SignUpDialog } from "./SignUpDialog";
 
 const PricingSection = () => {
   return (
-    <section className="mx-auto w-11/12 max-w-screen-xl">
+    <section
+      id="pricing"
+      className="mx-auto w-11/12 max-w-screen-xl scroll-mt-32"
+    >
       <div className="space-y-[60px]">
         <h2 className="md:yellow-gradient-text py-2 text-center text-[42px] font-bold text-white md:text-5xl">
           Pricing

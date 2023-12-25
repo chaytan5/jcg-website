@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="bg-primary" lang="en">
+    <html className="bg-primary  scroll-smooth" lang="en">
       <body className={`${poppins.className} bg-primary overscroll-x-none`}>
         {children}
       </body>

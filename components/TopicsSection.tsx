@@ -21,7 +21,10 @@ const TopicsSection = () => {
   }
 
   return (
-    <section className="mx-auto w-11/12 max-w-screen-xl">
+    <section
+      className="mx-auto w-11/12 max-w-screen-xl scroll-mt-32"
+      id="topics"
+    >
       <div className="space-y-16">
         <div className="space-y-6 text-center">
           <h2 className="text-[42px] font-bold leading-[46px] md:text-6xl ">

@@ -22,10 +22,10 @@ type Inputs = {
 
 export function SignUpDialog({
   children,
-  packageSelected,
+  packageSelected = null,
 }: {
   children: ReactNode;
-  packageSelected?: "light" | "medium" | "vip";
+  packageSelected?: "light" | "medium" | "vip" | null;
 }) {
   const [loading, setLoading] = useState(false);
 
@@ -41,6 +41,7 @@ export function SignUpDialog({
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     try {
       setLoading(true);
+
       const dataWithPackage = { ...data, packageSelected };
       const response = await axios.post("/api/register", dataWithPackage);
 

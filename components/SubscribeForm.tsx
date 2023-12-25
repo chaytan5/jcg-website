@@ -43,14 +43,11 @@ const SubscribeForm = () => {
   }, [formState, reset]);
 
   return (
-    <form
-      className="flex flex-col items-center gap-5 lg:flex-row lg:gap-6"
-      onSubmit={handleSubmit(onSubmit)}
-    >
-      <div className="space-y-1">
-        <div className="flex items-center gap-6">
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <div className="flex flex-col items-center gap-5 lg:flex-row lg:gap-6">
+        <div className="w-full space-y-1 lg:w-auto">
           <input
-            className="bg-lightGray/10 max-w-sm flex-grow rounded-xl border border-white/30 bg-gradient-to-r  px-5 py-[10px] text-base placeholder:text-white/40"
+            className="w-full flex-grow rounded-xl border border-white/30 bg-lightGray/10 bg-gradient-to-r px-5  py-[10px] text-base placeholder:text-white/40 sm:max-w-sm"
             type="string"
             placeholder="Enter your email"
             {...register("email", {
@@ -59,19 +56,19 @@ const SubscribeForm = () => {
                 /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
             })}
           />
-
-          <button
-            disabled={loading}
-            className="yellow-gradient-bg text-primary grid w-32 place-items-center whitespace-nowrap rounded-full text-sm font-medium disabled:opacity-70"
-          >
-            <div className="flex items-center gap-[10px]  py-3">
-              {loading ? "Please wait" : <p>Subscribe</p>}
-            </div>
-          </button>
+          <p className="h-1 text-xs text-red-500">
+            {errors.email && <span>Please enter a valid Email</span>}
+          </p>
         </div>
-        <p className="h-1 text-xs text-red-500">
-          {errors.email && <span>Please enter a valid Email</span>}
-        </p>
+
+        <button
+          disabled={loading}
+          className="yellow-gradient-bg grid w-32 place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary disabled:opacity-70"
+        >
+          <div className="flex items-center gap-[10px]  py-3">
+            {loading ? "Please wait" : <p>Subscribe</p>}
+          </div>
+        </button>
       </div>
     </form>
   );

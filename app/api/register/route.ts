@@ -8,9 +8,7 @@ export async function POST(request: NextRequest) {
   try {
     const reqBody = await request.json();
 
-    const { email } = reqBody;
-
-    console.log(reqBody);
+    const { email, packageSelected } = reqBody;
 
     const registeredUser = await RegisteredUser.findOne({ email });
 
@@ -23,6 +21,7 @@ export async function POST(request: NextRequest) {
 
     const newUser = new RegisteredUser({
       email,
+      packageSelected,
     });
 
     await newUser.save();

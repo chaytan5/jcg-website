@@ -23,14 +23,14 @@ const PricingSection = () => {
               <Image
                 src={lightPackage}
                 alt="Light package"
-                className="rounded-t-4xl h-full object-cover"
+                className="h-full rounded-t-4xl object-cover"
               />
 
               <p className="absolute bottom-5 left-5 text-[26px] font-bold tracking-wider drop-shadow">
                 Light package
               </p>
             </div>
-            <div className="gray-gradient rounded-b-4xl space-y-[30px] px-[30px] pb-[30px] pt-10">
+            <div className="gray-gradient space-y-[30px] rounded-b-4xl px-[30px] pb-[30px] pt-10">
               <div>
                 <h3 className="yellow-gradient-text text-[30px] font-bold">
                   <span className="pr-px align-super text-lg">$</span>333
@@ -68,8 +68,8 @@ const PricingSection = () => {
                 </ul>
               </div>
               <div>
-                <SignUpDialog>
-                  <button className="yellow-gradient-bg text-primary grid  w-full place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+                <SignUpDialog packageSelected="light">
+                  <button className="yellow-gradient-bg grid w-full  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
                     <div className="flex items-center gap-[10px] px-6 py-3">
                       <p>Sign up for the course</p>
                       <LuArrowUpRight size={18} className="text-primary" />
@@ -84,13 +84,13 @@ const PricingSection = () => {
               <Image
                 src={mediumPackage}
                 alt="Medium package"
-                className="rounded-t-4xl h-full object-cover opacity-70"
+                className="h-full rounded-t-4xl object-cover opacity-70"
               />
               <p className="absolute bottom-5 left-5 text-[26px] font-bold tracking-wider drop-shadow">
                 Medium package
               </p>
             </div>
-            <div className="gray-gradient rounded-b-4xl space-y-[30px] px-[30px] pb-[30px] pt-10">
+            <div className="gray-gradient space-y-[30px] rounded-b-4xl px-[30px] pb-[30px] pt-10">
               <div>
                 <h3 className="yellow-gradient-text text-[30px] font-bold">
                   <span className="pr-px align-super text-lg">$</span>799
@@ -122,8 +122,8 @@ const PricingSection = () => {
                 </p>
               </div>
               <div>
-                <SignUpDialog>
-                  <button className="yellow-gradient-bg text-primary grid  w-full place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+                <SignUpDialog packageSelected="medium">
+                  <button className="yellow-gradient-bg grid w-full  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
                     <div className="flex items-center gap-[10px] px-6 py-3">
                       <p>Sign up for the course</p>
                       <LuArrowUpRight size={18} className="text-primary" />
@@ -138,13 +138,13 @@ const PricingSection = () => {
               <Image
                 src={vipPackage}
                 alt="Medium package"
-                className="rounded-t-4xl h-full object-cover"
+                className="h-full rounded-t-4xl object-cover"
               />
               <p className="absolute bottom-5 left-5 text-[26px] font-bold tracking-wider drop-shadow">
                 VIP package
               </p>
             </div>
-            <div className="gray-gradient rounded-b-4xl space-y-[30px] px-[30px] pb-[30px] pt-10">
+            <div className="gray-gradient space-y-[30px] rounded-b-4xl px-[30px] pb-[30px] pt-10">
               <div>
                 <h3 className="yellow-gradient-text text-[30px] font-bold">
                   <span className="pr-px align-super text-lg">$</span>
@@ -180,8 +180,8 @@ const PricingSection = () => {
                 </p>
               </div>
               <div>
-                <SignUpDialog>
-                  <button className="yellow-gradient-bg text-primary grid  w-full place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+                <SignUpDialog packageSelected="vip">
+                  <button className="yellow-gradient-bg grid w-full  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
                     <div className="flex items-center gap-[10px] px-6 py-3">
                       <p>Sign up for the course</p>
                       <LuArrowUpRight size={18} className="text-primary" />

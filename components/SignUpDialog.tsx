@@ -20,7 +20,13 @@ type Inputs = {
   privacyPolicy: boolean;
 };
 
-export function SignUpDialog({ children }: { children: ReactNode }) {
+export function SignUpDialog({
+  children,
+  packageSelected = null,
+}: {
+  children: ReactNode;
+  packageSelected: "light" | "medium" | "vip" | null;
+}) {
   const [loading, setLoading] = useState(false);
 
   const {
@@ -35,7 +41,8 @@ export function SignUpDialog({ children }: { children: ReactNode }) {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     try {
       setLoading(true);
-      const response = await axios.post("/api/register", data);
+      const dataWithPackage = { ...data, packageSelected };
+      const response = await axios.post("/api/register", dataWithPackage);
 
       toast.success(response.data.message);
     } catch (error: any) {
@@ -99,7 +106,7 @@ export function SignUpDialog({ children }: { children: ReactNode }) {
                 type="string"
                 id="email-input"
                 placeholder="Enter your email"
-                className="light-gray-gradient focus:ring-lightYellow focus-visible:ring-lightYellow rounded-[10px] border border-white/30 px-5 py-[10px] placeholder:text-white/40"
+                className="light-gray-gradient rounded-[10px] border border-white/30 px-5 py-[10px] placeholder:text-white/40 focus:ring-lightYellow focus-visible:ring-lightYellow"
                 {...register("email", {
                   required: true,
                   pattern:
@@ -115,7 +122,7 @@ export function SignUpDialog({ children }: { children: ReactNode }) {
             <button
               disabled={loading}
               type="submit"
-              className="yellow-gradient-bg text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium disabled:opacity-70"
+              className="yellow-gradient-bg grid place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary disabled:opacity-70"
             >
               <div className="flex items-center gap-[10px] px-6 py-3">
                 {loading ? (
@@ -134,7 +141,7 @@ export function SignUpDialog({ children }: { children: ReactNode }) {
                 <input
                   type="checkbox"
                   id="privacy-policy"
-                  className="border-darkYellow bg-gunmetal accent-darkYellow checked:bg-darkYellow checked:accent-darkYellow focus:text-darkYellow h-4 w-4 appearance-none rounded-full border "
+                  className="h-4 w-4 appearance-none rounded-full border border-darkYellow bg-gunmetal accent-darkYellow checked:bg-darkYellow checked:accent-darkYellow focus:text-darkYellow "
                   {...register("privacyPolicy", { required: true })}
                 />
                 <p className="text-sm">

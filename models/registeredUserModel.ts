@@ -7,6 +7,10 @@ const registeredUserSchema = new mongoose.Schema(
       required: [true, "Please provide an Email"],
       unique: true,
     },
+    packageSelected: {
+      type: String,
+      enum: ["light", "medium", "vip"],
+    },
   },
   {
     timestamps: true,

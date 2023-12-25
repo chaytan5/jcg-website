@@ -22,10 +22,10 @@ type Inputs = {
 
 export function SignUpDialog({
   children,
-  packageSelected = null,
+  packageSelected,
 }: {
   children: ReactNode;
-  packageSelected: "light" | "medium" | "vip" | null;
+  packageSelected?: "light" | "medium" | "vip";
 }) {
   const [loading, setLoading] = useState(false);
 

@@ -71,7 +71,7 @@ const footerLinks = [
   [
     {
       title: "Main Page",
-      link: "#",
+      link: "https://jamescryptoguru.com",
     },
     {
       title: "FAQ",
@@ -94,7 +94,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-primary mx-auto w-11/12 max-w-screen-2xl text-white">
+    <footer className="mx-auto w-11/12 max-w-screen-2xl bg-primary text-white">
       <div className="pb-14 pt-28">
         <div className="flex flex-col items-center justify-center  gap-10 pb-10 lg:flex-row lg:items-stretch lg:justify-between lg:pb-32">
           <div className="flex max-w-sm flex-col items-center justify-between gap-4 pb-8 lg:max-w-64 lg:items-start lg:justify-normal">
@@ -109,7 +109,7 @@ const Footer = () => {
             <h6 className="yellow-gradient-text text-center text-lg font-bold lg:text-left">
               Navigation
             </h6>
-            <ul className="text-footer flex max-w-sm flex-row flex-wrap justify-center gap-4 font-medium lg:max-w-full lg:flex-col">
+            <ul className="flex max-w-sm flex-row flex-wrap justify-center gap-4 font-medium text-footer lg:max-w-full lg:flex-col">
               {footerLinks[0].map((item, i) => (
                 <Link key={i} href={item.link}>
                   {item.title}
@@ -121,7 +121,7 @@ const Footer = () => {
             <h6 className="yellow-gradient-text text-center text-lg font-bold lg:text-left">
               For you
             </h6>
-            <ul className="text-footer flex max-w-sm flex-row flex-wrap justify-center gap-4 font-medium lg:max-w-full lg:flex-col">
+            <ul className="flex max-w-sm flex-row flex-wrap justify-center gap-4 font-medium text-footer lg:max-w-full lg:flex-col">
               {footerLinks[1].map((item, i) => (
                 <Link key={i} href={item.link}>
                   {item.title}
@@ -139,7 +139,7 @@ const Footer = () => {
 
                 <SubscribeForm />
 
-                <p className="text-footer text-sm">
+                <p className="text-sm text-footer">
                   or via email:{" "}
                   <Link
                     href="mailto:contact@jamescryptoguru.com"
@@ -160,10 +160,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="bg-footer h-px w-full opacity-50" />
+        <div className="h-px w-full bg-footer opacity-50" />
 
         <div className="py-16 text-center lg:pb-0">
-          <p className="text-secondary text-sm font-medium">
+          <p className="text-sm font-medium text-secondary">
             &copy; 2023 James Crypto Guru. All rights reserved.
           </p>
         </div>

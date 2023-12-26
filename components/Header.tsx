@@ -67,9 +67,9 @@ const Header = () => {
     }
   }
   return (
-    <header className="bg-primary sticky top-0 z-50 w-full">
-      <div className="mx-auto flex w-11/12  items-center justify-between py-6">
-        <div className="flex items-center gap-5 sm:gap-14">
+    <header className="sticky top-0 z-50 w-full bg-primary">
+      <div className="mx-auto flex w-11/12  items-center justify-between gap-2 py-6">
+        <div className="flex items-center gap-2 sm:gap-14 md:gap-5">
           <div
             className="h-10 w-10 cursor-pointer rounded-full bg-black p-[10px]"
             onClick={handleMenuOpen}
@@ -82,14 +82,14 @@ const Header = () => {
         </div>
         <div className="flex items-center md:gap-4">
           <SignUpDialog>
-            <button className="yellow-gradient-bg text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+            <button className="yellow-gradient-bg grid  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
               <div className="flex items-center gap-[10px] px-6 py-3">
                 <p>Sign up for the course</p>
                 <LuArrowUpRight size={18} className="text-primary" />
               </div>
             </button>
           </SignUpDialog>
-          <button className="bg-gunmetal hidden place-items-center  whitespace-nowrap rounded-full text-sm  font-medium text-white md:grid">
+          <button className="hidden place-items-center whitespace-nowrap  rounded-full bg-gunmetal text-sm  font-medium text-white md:grid">
             <Link
               href="https://www.youtube.com/@JamesCryptoGuru"
               target="_blank"
@@ -104,7 +104,7 @@ const Header = () => {
       </div>
 
       <div
-        className={`bg-primary/90 fixed inset-0 z-30 h-full w-full backdrop-blur-sm ${
+        className={`fixed inset-0 z-30 h-full w-full bg-primary/90 backdrop-blur-sm ${
           menuOpen ? "block" : "hidden"
         }`}
         onClick={handleMenuClose}
@@ -152,7 +152,7 @@ const Header = () => {
           <div>
             <div className="mb-5 mt-10">
               <SignUpDialog>
-                <button className="yellow-gradient-bg text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+                <button className="yellow-gradient-bg grid  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
                   <div className="flex items-center gap-[10px] px-6 py-3">
                     <p>Sign up for the course</p>
                     <LuArrowUpRight size={18} className="text-primary" />

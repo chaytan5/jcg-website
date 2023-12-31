@@ -37,7 +37,7 @@ const socialLinks = [
   },
   {
     icon: MdOutlineAlternateEmail,
-    link: "contact@jamescryptoguru.com",
+    link: "mailto:contact@jamescryptoguru.com",
   },
   {
     icon: FaTelegram,

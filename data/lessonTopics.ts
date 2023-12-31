@@ -8,11 +8,11 @@ export const topics = [
     desc: "Cultivating a mindset of abundance and endless possibilities.",
   },
   {
-    name: "The law of mastery",
+    name: "The Law of mastery",
     desc: "Utilizing money as a tool for growth and wealth accumulation.",
   },
   {
-    name: "The law of investments",
+    name: "The Law of investments",
     desc: "James' Philosophy of investing in crypto and stocks.",
   },
   {

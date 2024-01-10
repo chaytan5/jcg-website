@@ -25,7 +25,10 @@ const HeroSideButton = () => {
             </div>
           </AskQuestionDialog>
           {/* <SignUpDialog> */}
-          <a href="https://jamescryptoguru.gumroad.com/l/CryptocurrencyMasterCourse">
+          <a
+            href="https://jamescryptoguru.gumroad.com/l/airds"
+            rel="noreferrer noopener"
+          >
             <div className="dark-gray-gradient fixed bottom-60 right-[60px] z-[999] hidden h-[70px] w-[70px] cursor-pointer place-items-center rounded-full border border-lightYellow/40 p-3 text-center text-[10px] font-bold text-lightYellow shadow-hero-button xl:grid">
               Buy Now
             </div>

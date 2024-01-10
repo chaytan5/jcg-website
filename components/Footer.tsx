@@ -164,7 +164,8 @@ const Footer = () => {
 
         <div className="py-16 text-center lg:pb-0">
           <p className="text-sm font-medium text-secondary">
-            &copy; 2023 James Crypto Guru. All rights reserved.
+            &copy; {new Date().getFullYear()} James Crypto Guru. All rights
+            reserved.
           </p>
         </div>
       </div>

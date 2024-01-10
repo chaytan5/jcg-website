@@ -5,6 +5,7 @@ import lightPackage from "@/assets/images/light-package.png";
 import mediumPackage from "@/assets/images/medium-package.png";
 import vipPackage from "@/assets/images/vip-package.png";
 import { SignUpDialog } from "./SignUpDialog";
+import CTAButton from "./CTAButton";
 
 const PricingSection = () => {
   return (
@@ -68,14 +69,15 @@ const PricingSection = () => {
                 </ul>
               </div>
               <div>
-                <SignUpDialog packageSelected="light">
+                {/* <SignUpDialog packageSelected="light">
                   <button className="yellow-gradient-bg grid w-full  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
                     <div className="flex items-center gap-[10px] px-6 py-3">
                       <p>Sign up for the course</p>
                       <LuArrowUpRight size={18} className="text-primary" />
                     </div>
                   </button>
-                </SignUpDialog>
+                </SignUpDialog> */}
+                <CTAButton className="w-full">Buy Now on Gumroad</CTAButton>
               </div>
             </div>
           </div>
@@ -122,14 +124,16 @@ const PricingSection = () => {
                 </p>
               </div>
               <div>
-                <SignUpDialog packageSelected="medium">
+                {/* <SignUpDialog packageSelected="medium">
                   <button className="yellow-gradient-bg grid w-full  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
                     <div className="flex items-center gap-[10px] px-6 py-3">
                       <p>Sign up for the course</p>
                       <LuArrowUpRight size={18} className="text-primary" />
                     </div>
                   </button>
-                </SignUpDialog>
+                </SignUpDialog> */}
+
+                <CTAButton className="w-full">Buy Now on Gumroad</CTAButton>
               </div>
             </div>
           </div>
@@ -180,14 +184,16 @@ const PricingSection = () => {
                 </p>
               </div>
               <div>
-                <SignUpDialog packageSelected="vip">
+                {/* <SignUpDialog packageSelected="vip">
                   <button className="yellow-gradient-bg grid w-full  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
                     <div className="flex items-center gap-[10px] px-6 py-3">
                       <p>Sign up for the course</p>
                       <LuArrowUpRight size={18} className="text-primary" />
                     </div>
                   </button>
-                </SignUpDialog>
+                </SignUpDialog> */}
+
+                <CTAButton className="w-full">Buy Now on Gumroad</CTAButton>
               </div>
             </div>
           </div>

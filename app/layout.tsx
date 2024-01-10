@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -25,6 +26,9 @@ export default function RootLayout({
         {children}
       </body>
       <Toaster position="top-center" theme="dark" />
+      <Script src="https://gumroad.com/js/gumroad.js" />
+
+      {/* <Script src="https://gumroad.com/js/gumroad-embed.js"></Script> */}
     </html>
   );
 }

@@ -32,7 +32,7 @@ export default function Home() {
         <PricingSection />
         <JamesInfoSection />
         <TopicsSection />
-        <CTA />
+        {/* <CTA /> */}
         <FAQSection />
         <ContactSection />
         <div className="fixed left-6 top-32 z-10 hidden w-fit text-white xl:block">

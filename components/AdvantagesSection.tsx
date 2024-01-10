@@ -6,6 +6,7 @@ import advantageIcon from "@/assets/icons/advantage.svg";
 import useMatchMedia from "@/hooks/useMediaQuery";
 import { useState } from "react";
 import { SignUpDialog } from "./SignUpDialog";
+import CTAButton from "./CTAButton";
 
 const BeforeCard = () => {
   return (
@@ -54,14 +55,16 @@ const BeforeCard = () => {
           </p>
         </div>
 
-        <SignUpDialog>
-          <button className="from-lightYellow to-darkYellow text-primary grid w-full place-items-center whitespace-nowrap rounded-full bg-gradient-to-r text-sm font-medium ">
+        {/* <SignUpDialog>
+          <button className="grid w-full place-items-center whitespace-nowrap rounded-full bg-gradient-to-r from-lightYellow to-darkYellow text-sm font-medium text-primary ">
             <div className="flex items-center gap-[10px] px-6 py-3">
               <p>Make a First Step to Change</p>
               <LuArrowUpRight size={18} className="text-primary" />
             </div>
           </button>
-        </SignUpDialog>
+        </SignUpDialog> */}
+
+        <CTAButton>Make a First Step to Change</CTAButton>
       </div>
     </div>
   );
@@ -129,14 +132,15 @@ const AfterCard = () => {
           </p>
         </div>
 
-        <SignUpDialog>
-          <button className="yellow-gradient-bg text-primary grid w-full place-items-center whitespace-nowrap  rounded-full text-sm font-medium ">
+        {/* <SignUpDialog>
+          <button className="yellow-gradient-bg grid w-full place-items-center whitespace-nowrap rounded-full  text-sm font-medium text-primary ">
             <div className="flex items-center gap-[10px] px-6 py-3">
               <p className="text-base">Sign Up & Save 10%*</p>
               <LuArrowUpRight size={18} className="text-primary" />
             </div>
           </button>
-        </SignUpDialog>
+        </SignUpDialog> */}
+        <CTAButton>Buy Now on Gumroad</CTAButton>
       </div>
     </div>
   );

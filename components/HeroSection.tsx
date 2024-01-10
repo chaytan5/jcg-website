@@ -6,6 +6,7 @@ import gumroadIcon from "@/assets/icons/gumroad-icon.svg";
 import HeroSideButton from "./HeroSideButton";
 import { SignUpDialog } from "./SignUpDialog";
 import HeroForm from "./HeroForm";
+import CTAButton from "./CTAButton";
 
 const HeroSection = () => {
   return (
@@ -86,14 +87,15 @@ const HeroSection = () => {
           </div>
 
           <div className="flex items-center justify-center gap-3 md:hidden">
-            <SignUpDialog>
+            {/* <SignUpDialog>
               <button className="yellow-gradient-bg grid place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
                 <div className="flex items-center gap-2 px-4 py-3">
                   <p>Sign Up & Save 10%*</p>
                   <LuArrowUpRight size={18} />
                 </div>
               </button>
-            </SignUpDialog>
+            </SignUpDialog> */}
+            <CTAButton>Buy Now on Gumroad</CTAButton>
 
             <button className=" grid place-items-center rounded-full  text-sm font-medium text-primary ">
               <Link
@@ -106,7 +108,9 @@ const HeroSection = () => {
             </button>
           </div>
 
-          <HeroForm />
+          {/* <HeroForm /> */}
+
+          <CTAButton className="hidden md:block">Buy Now on Gumroad</CTAButton>
         </div>
         <div className="max-w-md self-center md:max-w-xl md:self-start md:pb-16 ">
           <Image src={heroImg} alt="James Crypto Guru" />

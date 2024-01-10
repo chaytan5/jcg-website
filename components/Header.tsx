@@ -7,6 +7,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
 import { SignUpDialog } from "./SignUpDialog";
+import CTAButton from "./CTAButton";
 
 const navLinks = [
   {
@@ -81,14 +82,23 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex items-center md:gap-4">
-          <SignUpDialog>
-            <button className="yellow-gradient-bg grid  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
+          {/* <SignUpDialog>
+            <button className="yellow-gradient-bg grid  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary transition hover:opacity-80">
               <div className="flex items-center gap-[10px] px-6 py-3">
-                <p>Sign up for the course</p>
+                <p>Sign Up</p>
                 <LuArrowUpRight size={18} className="text-primary" />
               </div>
             </button>
-          </SignUpDialog>
+          </SignUpDialog> */}
+
+          <CTAButton>Buy Now on Gumroad</CTAButton>
+          {/* <a
+            className="gumroad-button"
+            href="https://jamescryptoguru.gumroad.com/l/CryptocurrencyMasterCourse"
+            data-gumroad-overlay-checkout="true"
+          >
+            Buy on
+          </a> */}
           <button className="hidden place-items-center whitespace-nowrap  rounded-full bg-gunmetal text-sm  font-medium text-white md:grid">
             <Link
               href="https://www.youtube.com/@JamesCryptoGuru"
@@ -151,14 +161,15 @@ const Header = () => {
 
           <div>
             <div className="mb-5 mt-10">
-              <SignUpDialog>
+              {/* <SignUpDialog>
                 <button className="yellow-gradient-bg grid  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
                   <div className="flex items-center gap-[10px] px-6 py-3">
                     <p>Sign up for the course</p>
                     <LuArrowUpRight size={18} className="text-primary" />
                   </div>
                 </button>
-              </SignUpDialog>
+              </SignUpDialog> */}
+              <CTAButton>Buy Now on Gumroad</CTAButton>
             </div>
 
             <div className="pb-10">

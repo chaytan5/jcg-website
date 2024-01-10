@@ -35,10 +35,6 @@ const navLinks = [
     link: "#topics",
   },
   {
-    title: "10% Discount Deal",
-    link: "#discount-deal",
-  },
-  {
     title: "Who is it for",
     link: "#who-is-it-for",
   },
@@ -160,7 +156,7 @@ const Header = () => {
           </div>
 
           <div>
-            <div className="mb-5 mt-10">
+            <div className="mb-5 ">
               {/* <SignUpDialog>
                 <button className="yellow-gradient-bg grid  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
                   <div className="flex items-center gap-[10px] px-6 py-3">

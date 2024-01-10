@@ -46,16 +46,16 @@ const HeroSection = () => {
             abundance
           </h4>
           <div className="light-gray-gradient flex flex-col divide-y divide-dotted divide-white/30 rounded-4xl px-5 text-center md:hidden">
-            <div className="grid grid-cols-2 place-items-center divide-x divide-dotted divide-white/30">
-              <div className="my-5 space-y-2 pr-5">
+            <div className="grid grid-cols-1 place-items-center divide-y divide-dotted divide-white/30">
+              {/* <div className="my-5 space-y-2 pr-5">
                 <h4 className=" yellow-gradient-text text-xl font-bold">
                   *10% discount
                 </h4>
                 <p className=" text-sm font-bold">
                   Exclusive 10% Discount for the First 50 Enrollees!
                 </p>
-              </div>
-              <div className="my-5 space-y-2 pl-5">
+              </div> */}
+              <div className="space-y-2 py-5">
                 <h4 className="yellow-gradient-text text-xl font-bold">
                   11 lessons
                 </h4>
@@ -64,9 +64,8 @@ const HeroSection = () => {
                   topics
                 </p>
               </div>
-            </div>
-            <div className="grid grid-cols-2 place-items-center divide-x divide-dotted divide-white/30">
-              <div className="my-5 space-y-2 pr-5">
+
+              <div className="space-y-2 py-5 ">
                 <h4 className=" yellow-gradient-text text-xl font-bold">
                   PDF Summaries
                 </h4>
@@ -74,7 +73,7 @@ const HeroSection = () => {
                   Convenient summaries in PDF format provided after each lesson
                 </p>
               </div>
-              <div className="my-5 space-y-2 pl-5">
+              <div className="space-y-2 py-5 ">
                 <h4 className="yellow-gradient-text text-xl font-bold">
                   Unlimited Access
                 </h4>

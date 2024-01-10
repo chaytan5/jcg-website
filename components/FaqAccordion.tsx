@@ -34,12 +34,6 @@ const faqData = [
     answer:
       "Absolutely, students of this course gain access to an exclusive community. This platform is ideal for discussions, networking, sharing experiences, and seeking advice, making your learning journey collaborative and supported.",
   },
-  ,
-  {
-    question: "What is this 10% discount about?",
-    answer:
-      "The first 50 people who sign up for early access to the course will receive a special 10% discount. This offer is a way of rewarding early birds for their eagerness and commitment to improve their financial literacy and trading skills. This discount makes the course more accessible while giving early enrollees the advantage of starting their learning journey ahead.",
-  },
 ];
 
 export function FaqAccordion() {
@@ -47,7 +41,7 @@ export function FaqAccordion() {
     <Accordion type="single" collapsible className="w-full">
       {faqData.map((item, index) => (
         <AccordionItem
-          className="gray-gradient rounded-4xl mb-[10px] gap-[30px] data-[state=open]:mb-[30px]"
+          className="gray-gradient mb-[10px] gap-[30px] rounded-4xl data-[state=open]:mb-[30px]"
           key={item?.question}
           value={`item-${index + 1}`}
         >

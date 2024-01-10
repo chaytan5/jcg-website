@@ -13,9 +13,9 @@ const ContactSection = () => {
       </div>
       <section
         id="contact"
-        className="bg-contact-texture relative mx-auto w-11/12 max-w-screen-xl scroll-mt-32"
+        className="relative mx-auto w-11/12 max-w-screen-xl scroll-mt-32 bg-contact-texture"
       >
-        <div className="relative z-10 space-y-16">
+        <div className="relative space-y-16">
           <h2 className="text-center text-[42px] font-bold md:text-6xl">
             Get in Touch
           </h2>
@@ -31,7 +31,7 @@ const ContactSection = () => {
 
               <div className="rounded-4xl bg-gradient-to-r from-[#191A1B] to-[#131415] p-7 md:px-10 md:py-8">
                 <div className="flex items-center gap-4 sm:gap-[30px]">
-                  <HiOutlineMailOpen className="text-lightYellow h-10 w-10 flex-shrink-0" />
+                  <HiOutlineMailOpen className="h-10 w-10 flex-shrink-0 text-lightYellow" />
 
                   <div>
                     <h4 className="text-xl font-bold md:text-2xl">Email</h4>

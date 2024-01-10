@@ -10,8 +10,8 @@ import HeroForm from "./HeroForm";
 const HeroSection = () => {
   return (
     <section className="relative" id="hero">
-      <div className="-top-12 left-0 hidden w-full place-items-center text-center uppercase md:absolute md:grid lg:-top-20">
-        <p className="font-outline text-primary bg-gradient-to-b from-[#806322] to-transparent to-75% bg-clip-text text-[150px] font-bold tracking-tight lg:text-[240px]">
+      <div className="-top-12 left-0 hidden w-full select-none place-items-center text-center uppercase md:absolute md:grid lg:-top-20">
+        <p className="font-outline bg-gradient-to-b from-[#806322] to-transparent to-75% bg-clip-text text-[150px] font-bold tracking-tight text-primary lg:text-[240px]">
           Course
         </p>
       </div>
@@ -20,14 +20,14 @@ const HeroSection = () => {
 
         <div className="w-full space-y-8 self-end lg:w-1/2 ">
           <div className="gray-gradient hidden w-fit items-center gap-4 divide-x-2 divide-dotted divide-white/30 rounded-xl bg-gradient-to-r px-6 py-2 lg:flex">
-            <p className="from-lightYellow to-darkYellow bg-gradient-to-r bg-clip-text text-[40px] font-bold text-transparent">
+            <p className="bg-gradient-to-r from-lightYellow to-darkYellow bg-clip-text text-[40px] font-bold text-transparent">
               Starts in{" "}
             </p>
             <p className="pl-6 text-2xl font-medium">January 2024</p>
           </div>
           <h1 className="text-center text-5xl font-bold text-[#F2F2F2] md:text-left md:text-8xl">
             The Laws <br />
-            <span className="from-lightYellow to-darkYellow bg-gradient-to-r bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-lightYellow to-darkYellow bg-clip-text text-transparent">
               of Money
             </span>
           </h1>
@@ -44,7 +44,7 @@ const HeroSection = () => {
             Discover the power of money with JamesCG to create a life of
             abundance
           </h4>
-          <div className="light-gray-gradient rounded-4xl flex flex-col divide-y divide-dotted divide-white/30 px-5 text-center md:hidden">
+          <div className="light-gray-gradient flex flex-col divide-y divide-dotted divide-white/30 rounded-4xl px-5 text-center md:hidden">
             <div className="grid grid-cols-2 place-items-center divide-x divide-dotted divide-white/30">
               <div className="my-5 space-y-2 pr-5">
                 <h4 className=" yellow-gradient-text text-xl font-bold">
@@ -87,7 +87,7 @@ const HeroSection = () => {
 
           <div className="flex items-center justify-center gap-3 md:hidden">
             <SignUpDialog>
-              <button className="yellow-gradient-bg text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+              <button className="yellow-gradient-bg grid place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
                 <div className="flex items-center gap-2 px-4 py-3">
                   <p>Sign Up & Save 10%*</p>
                   <LuArrowUpRight size={18} />
@@ -95,7 +95,7 @@ const HeroSection = () => {
               </button>
             </SignUpDialog>
 
-            <button className=" text-primary grid place-items-center  rounded-full text-sm font-medium ">
+            <button className=" grid place-items-center rounded-full  text-sm font-medium text-primary ">
               <Link
                 href={"#trailer"}
                 className="yellow-gradient-text flex items-center gap-2 "

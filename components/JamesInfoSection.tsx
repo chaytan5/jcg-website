@@ -27,13 +27,13 @@ const JamesInfoSection = () => {
       <div className="flex">
         <div className="hidden w-[40%] flex-shrink-0 space-y-8 pb-10 lg:block">
           <div className="flex items-center gap-2">
-            <div className="bg-lightYellow/10 text-secondary whitespace-nowrap rounded-full px-4 py-1">
+            <div className="whitespace-nowrap rounded-full bg-lightYellow/10 px-4 py-1 text-secondary">
               International Speaker
             </div>
-            <div className="bg-lightYellow/10 text-secondary whitespace-nowrap rounded-full px-4 py-1">
+            <div className="whitespace-nowrap rounded-full bg-lightYellow/10 px-4 py-1 text-secondary">
               Investor
             </div>
-            <div className="bg-lightYellow/10 text-secondary whitespace-nowrap rounded-full px-4 py-1">
+            <div className="whitespace-nowrap rounded-full bg-lightYellow/10 px-4 py-1 text-secondary">
               Entrepreneur
             </div>
           </div>
@@ -54,7 +54,7 @@ const JamesInfoSection = () => {
           </div>
 
           <div>
-            <button className="yellow-gradient-bg text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+            <button className="yellow-gradient-bg grid  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
               <Link
                 href={"https://jamescryptoguru.gumroad.com/"}
                 target="_blank"
@@ -70,7 +70,7 @@ const JamesInfoSection = () => {
         <div className="relative left-0 top-0 w-1/2 flex-grow py-8  lg:-left-16 lg:w-auto lg:py-0 ">
           <div
             style={{ writingMode: "vertical-rl" }}
-            className="md:from-secondary absolute right-10 top-0 z-0 h-full select-none bg-gradient-to-l from-gray-300/80 to-gray-300/10 bg-clip-text text-8xl font-semibold uppercase tracking-tighter text-transparent opacity-40 md:bg-gradient-to-b md:to-transparent md:to-60% lg:top-2"
+            className="absolute right-10 top-0 z-0 h-full select-none bg-gradient-to-l from-gray-300/80 to-gray-300/10 bg-clip-text text-8xl font-semibold uppercase tracking-tighter text-transparent opacity-40 md:bg-gradient-to-b md:from-secondary md:to-transparent md:to-60% lg:top-2"
           >
             JAMES
           </div>
@@ -101,13 +101,13 @@ const JamesInfoSection = () => {
       </div>
       <div className="block space-y-8 pb-[60px] lg:hidden">
         <div className="flex flex-wrap items-center  gap-2 pt-10 sm:justify-center">
-          <div className="bg-lightYellow/10 text-secondary whitespace-nowrap rounded-full px-4 py-1">
+          <div className="whitespace-nowrap rounded-full bg-lightYellow/10 px-4 py-1 text-secondary">
             International Speaker
           </div>
-          <div className="bg-lightYellow/10 text-secondary whitespace-nowrap rounded-full px-4 py-1">
+          <div className="whitespace-nowrap rounded-full bg-lightYellow/10 px-4 py-1 text-secondary">
             Investor
           </div>
-          <div className="bg-lightYellow/10 text-secondary whitespace-nowrap rounded-full px-4 py-1">
+          <div className="whitespace-nowrap rounded-full bg-lightYellow/10 px-4 py-1 text-secondary">
             Entrepreneur
           </div>
         </div>
@@ -123,7 +123,7 @@ const JamesInfoSection = () => {
         </p>
 
         <div className="flex items-center justify-center gap-4">
-          <button className="yellow-gradient-bg text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+          <button className="yellow-gradient-bg grid place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
             <Link
               href={"https://jamescryptoguru.gumroad.com/"}
               target="_blank"
@@ -134,7 +134,7 @@ const JamesInfoSection = () => {
               <Image src={gumroadIcon} className="w-20" alt="Gumroad" />
             </Link>
           </button>
-          <button className=" text-primary  grid place-items-center whitespace-nowrap rounded-full text-sm font-medium ">
+          <button className=" grid  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
             <Link
               href={"#trailer"}
               className="yellow-gradient-text flex items-center gap-2 "
@@ -146,7 +146,7 @@ const JamesInfoSection = () => {
         </div>
       </div>
       <div className="relative">
-        <div className="from-primary to-primary absolute z-10 hidden h-full w-full bg-gradient-to-b via-transparent lg:block "></div>
+        <div className="absolute hidden h-full  w-full bg-gradient-to-b from-primary via-transparent to-primary lg:block "></div>
         <div className=" grid grid-cols-3 gap-[10px] lg:grid-cols-4 lg:gap-[30px]">
           <div className="flex flex-col gap-[10px] lg:gap-[30px]">
             <Image src={img1} alt="James Crypto Guru" placeholder="blur" />

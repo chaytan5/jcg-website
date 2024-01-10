@@ -1,15 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
-
-import {
-  FaDiscord,
-  FaYoutube,
-  FaXTwitter,
-  FaInstagram,
-  FaPatreon,
-  FaTelegram,
-} from "react-icons/fa6";
 import InfoSection from "@/components/InfoSection";
 import HeroSection from "@/components/HeroSection";
 import VideoSection from "@/components/VideoSection";
@@ -24,7 +14,7 @@ import TopicsSection from "@/components/TopicsSection";
 import CTA from "@/components/CTA";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
+import Footer, { socialLinks } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -45,6 +35,20 @@ export default function Home() {
         <CTA />
         <FAQSection />
         <ContactSection />
+        <div className="fixed left-6 top-32 z-10 hidden w-fit text-white xl:block">
+          <div className="grid h-full w-full grid-cols-1 gap-6 ">
+            {socialLinks.map((item, i) => (
+              <Link
+                className="text-2xl text-white/50 transition hover:text-white/90"
+                key={i}
+                rel="noopener noreferrer"
+                href={item.link}
+              >
+                {<item.icon />}
+              </Link>
+            ))}
+          </div>
+        </div>
       </main>
       <Footer />
     </>

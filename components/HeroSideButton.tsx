@@ -12,7 +12,7 @@ const HeroSideButton = () => {
     <>
       <div
         onClick={() => setOpen(!open)}
-        className="dark-gray-gradient shadow-hero-button absolute -right-10 bottom-0 z-20 hidden cursor-pointer place-items-center rounded-full border-[10px] border-neutral-800 p-5 transition-all hover:scale-110 xl:grid"
+        className="dark-gray-gradient fixed bottom-10 right-10 z-30 hidden cursor-pointer place-items-center rounded-full border-[10px] border-neutral-800 p-5 shadow-hero-button transition-all hover:scale-110 xl:grid"
       >
         <Image src={jcgLogo} alt="James Crypto Guru" />
       </div>
@@ -20,12 +20,12 @@ const HeroSideButton = () => {
       {open ? (
         <>
           <AskQuestionDialog>
-            <div className="dark-gray-gradient shadow-hero-button border-lightYellow/40 text-lightYellow absolute -right-5 bottom-32 z-20 hidden h-[70px] w-[70px] cursor-pointer place-items-center rounded-full border p-3 text-center text-[10px] font-bold xl:grid">
+            <div className="dark-gray-gradient fixed bottom-40 right-[60px] z-20 hidden h-[70px] w-[70px] cursor-pointer place-items-center rounded-full border border-lightYellow/40 p-3 text-center text-[10px] font-bold text-lightYellow shadow-hero-button xl:grid">
               Ask a question
             </div>
           </AskQuestionDialog>
           <SignUpDialog>
-            <div className="dark-gray-gradient shadow-hero-button border-lightYellow/40 text-lightYellow absolute -right-5 bottom-52 z-20 hidden h-[70px] w-[70px] cursor-pointer place-items-center rounded-full border p-3 text-center text-[10px] font-bold xl:grid">
+            <div className="dark-gray-gradient fixed bottom-60 right-[60px] z-20 hidden h-[70px] w-[70px] cursor-pointer place-items-center rounded-full border border-lightYellow/40 p-3 text-center text-[10px] font-bold text-lightYellow shadow-hero-button xl:grid">
               Sign up for the course
             </div>
           </SignUpDialog>

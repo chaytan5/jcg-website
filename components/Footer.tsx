@@ -14,7 +14,7 @@ import SubscribeForm from "./SubscribeForm";
 import { IconType } from "react-icons";
 import React from "react";
 
-const socialLinks = [
+export const socialLinks = [
   {
     icon: FaDiscord,
     link: "https://bit.ly/JamesCryptoGuruDiscord",
